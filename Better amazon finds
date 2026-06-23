@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Amazon Finds</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+font-family:Arial,sans-serif;
+max-width:900px;
+margin:auto;
+padding:20px;
+}
+.product{
+border:1px solid #ddd;
+padding:20px;
+margin-bottom:20px;
+border-radius:10px;
+}
+.button{
+background:#ff9900;
+color:white;
+padding:10px 20px;
+text-decoration:none;
+border-radius:5px;
+display:inline-block;
+}
+img{
+width:100%;
+max-width:300px;
+}
+</style>
+</head>
+<body>
+
+<h1>My Favorite Amazon Finds</h1>
+
+<p>As an Amazon Associate I earn from qualifying purchases.</p>
+
+<div class="product">
+<img src="PRODUCT_IMAGE_URL">
+<h2>Product Name</h2>
+<p>Short description.</p>
+<a class="button" href="YOUR_AFFILIATE_LINK">
+View on Amazon
+</a>
+</div>
+
+</body>
+</html>
