@@ -38,13 +38,6 @@ body{
     font-size:.9rem;
 }
 
-.disclosure{
-    background:#fff8e7;
-    padding:15px;
-    text-align:center;
-    font-size:.9rem;
-}
-
 /* ADD THIS HERE */
 
 .welcome{
@@ -69,12 +62,6 @@ body{
 
 /* THEN YOUR NEXT SECTION */
 
-.container{
-    max-width:1200px;
-    margin:auto;
-    padding:30px 20px;
-}
-    
 .container{
     max-width:1200px;
     margin:auto;
@@ -137,8 +124,15 @@ body{
 .btn:hover{
     opacity:.9;
 }
-
-footer{
+.category-description{
+    color:#666;
+    font-size:1.05rem;
+    line-height:1.7;
+    margin-top:-5px;
+    margin-bottom:25px;
+    max-width:850px;
+}
+    footer{
     text-align:center;
     padding:40px 20px;
     color:#777;
@@ -154,6 +148,30 @@ footer{
     color:#333;
     font-weight:bold;
 }
+.quick-links{
+    max-width:1100px;
+    margin:20px auto 50px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+.quick-links a{
+    text-decoration:none;
+    background:white;
+    color:#4b6043;
+    padding:15px 22px;
+    border-radius:12px;
+    font-weight:bold;
+    box-shadow:0 4px 10px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.quick-links a:hover{
+    background:#4b6043;
+    color:white;
+    transform:translateY(-3px);
+}    
 </style>
 </head>
 
@@ -197,10 +215,26 @@ I hope you enjoy exploring my favorite finds! 🤍
     
 </section>
 
+<section class="quick-links">
+
+    <a href="#kitchen">🍳 Kitchen Favorites</a>
+
+    <a href="#home">🏠 Home Organization</a>
+
+    <a href="#school">🎒 School Supplies</a>
+
+    <a href="#healthy">🌿 Healthy Living</a>
+
+    <a href="#family">👨‍👩‍👧‍👦 Family Favorites</a>
+
+    <a href="#faith">✝️ Faith & Family</a>
+
+</section>
+
 <div class="container">
     
-    <h2 class="category-title">🍳 Kitchen Favorites</h2>
-
+    <h2 id="kitchen" class="category-title">🍳 Kitchen Favorites</h2>
+        
     <div class="products">
 
         <div class="card">
@@ -244,8 +278,8 @@ I hope you enjoy exploring my favorite finds! 🤍
 
     </div>
 
-    <h2 class="category-title">🏠 Home Favorites</h2>
-
+    <h2 id="home" class="category-title">🏠 Home Organization</h2>
+        
     <div class="products">
 
         <div class="card">
@@ -262,8 +296,8 @@ I hope you enjoy exploring my favorite finds! 🤍
         </div>
 
     </div>
-<h2 class="category-title">🎒 School Supplies</h2>
-
+<h2 id="school" class="category-title">🎒 School Supplies</h2>
+        
 <div class="products">
 
     <div class="card">
@@ -319,31 +353,43 @@ I hope you enjoy exploring my favorite finds! 🤍
     </div>
 
 </div>  
-<h2 class="category-title">💄 Beauty Finds</h2>
-
-    <div class="products">
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800" alt="">
-            <div class="card-content">
-                <h3>Beauty Product #1</h3>
-                <p>Trending beauty favorite everyone loves.</p>
-                <a href="#" class="btn">View on Amazon</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800" alt="">
-            <div class="card-content">
-                <h3>Beauty Product #2</h3>
-                <p>Perfect addition to your beauty routine.</p>
-                <a href="#" class="btn">View on Amazon</a>
-            </div>
-        </div>
-
-    </div>
 </div>
 
+<h2 id="healthy" class="category-title">🌿 Healthy Living</h2>
+
+<p class="category-description">
+Discover products that help support a healthier lifestyle, from nutritious foods and wellness essentials to everyday items that make healthy living easier for the whole family.
+</p>
+
+<div class="products">
+    <!-- Healthy Living products will go here -->
+</div>
+
+<h2 id="family" class="category-title">👨‍👩‍👧‍👦 Family Favorites</h2>
+
+<p class="category-description">
+A collection of family-friendly products I love, including everyday essentials, seasonal favorites, and practical finds that help make family life a little easier.
+</p>
+
+<div class="products">
+    <!-- Family Favorites products will go here -->
+</div>
+
+<h2 id="faith" class="category-title">✝️ Faith & Family</h2>
+
+<p class="category-description">
+Faith-inspired books, devotionals, journals, gifts, and resources that encourage families to grow together in Christ and keep Jesus at the center of everyday life.
+</p>
+
+<div class="products">
+    <!-- Faith & Family products will go here -->
+</div>
+
+</div>
+
+<footer>
+</div>
+    
 <footer>
     <p>Thanks for visiting Faith & Family Favorites.
         I share products that help support a healthy,
@@ -354,6 +400,7 @@ I hope you enjoy exploring my favorite finds! 🤍
         <a href="#">Pinterest</a>
         <a href="#">TikTok</a>
     </div>
+   
 </footer>
 
 </body>
