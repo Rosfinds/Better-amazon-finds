@@ -79,7 +79,8 @@ body{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:35px;
-    margin-bottom:50px;
+    margin-bottom:60px;
+    align-items:stretch;
 }
     
 .card{
@@ -91,7 +92,8 @@ body{
     transition:all .3s ease;
     display:flex;
     flex-direction:column;
-}   
+    height:100%;
+}
     
 .card:hover{
     transform:translateY(-5px);
