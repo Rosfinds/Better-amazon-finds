@@ -215,8 +215,9 @@ body{
     gap:30px;
     flex-wrap:wrap;
 }
-    .rose-card{
-    width:320px;
+    
+.rose-card{
+    width:340px;
     background:white;
     border-radius:20px;
     overflow:hidden;
@@ -224,15 +225,18 @@ body{
     border:1px solid #ece8df;
     display:flex;
     flex-direction:column;
+    transition:all .3s ease;
 }
 
+.rose-card:hover{
+    transform:translateY(-5px);
+}
+    
 .rose-card img{
-    width:250px;
-    height:250px;
-    object-fit:contain;
+    width:100%;
+    height:240px;
+    object-fit:cover;
     display:block;
-    margin:25px auto;
-    border:3px solid red;
 }
     
 .rose-card h3{
@@ -251,7 +255,8 @@ body{
 }
 
 .rose-card .btn{
-    margin:25px;
+    margin:20px;
+    width:auto;
 }
     
 footer{
