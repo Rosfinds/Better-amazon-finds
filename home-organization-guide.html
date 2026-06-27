@@ -1,1 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rose's Guide to Home Organization | Healthy Living & Family Finds</title>
+  
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f7f7f7;
+    color:#333;
+}
+
+.hero{
+    background:#ffffff;
+    text-align:center;
+    padding:20px;
+}
+
+.banner{
+    width:100%;
+    max-width:1200px;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
+}
+.navbar{
+    background:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:12px;
+    padding:18px 20px;
+    box-shadow:0 3px 12px rgba(0,0,0,.06);
+    margin-bottom:20px;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:#355537;
+    font-weight:600;
+    padding:10px 16px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.navbar a:hover{
+    background:#355537;
+    color:white;
+}
+    
+.disclosure{
+    background:#fff8e7;
+    padding:15px;
+    text-align:center;
+    font-size:.9rem;
+}
+
+/* ADD THIS HERE */
+
+.welcome{
+    background:white;
+    max-width:900px;
+    margin:40px auto;
+    padding:35px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.welcome h2{
+    color:#4b6043;
+    margin-bottom:15px;
+}
+
+.welcome p{
+    color:#555;
+    line-height:1.8;
+}
+
+/* THEN YOUR NEXT SECTION */
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:30px 20px;
+}
+
+.category-title{
+    margin:60px 0 20px;
+    font-size:2rem;
+    text-align:center;
+    color:#4b6043;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:35px;
+    margin-bottom:60px;
+    align-items:stretch;
+}
+
+@media (max-width: 900px){
+    .products{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .products{
+        grid-template-columns:1fr;
+    }
+}
+    
+.card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    border:1px solid #ece8df;
+    transition:all .3s ease;
+    display:flex;
+    flex-direction:column;
+    height:100%;
+}
+    
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:260px;
+    object-fit:contain;
+    background:white;
+    padding:20px;
+    border-radius:12px;
+}
+
+.card-content{
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    flex-grow:1;
+}
+    .card-content .btn{
+    margin-top:auto;
+}
+    
+.card h3{
+    margin-bottom:12px;
+    text-align:center;
+    color:#2f4732;
+    font-size:1.25rem;
+}
+    
+.card p{
+    color:#666;
+    margin-bottom:18px;
+    line-height:1.6;
+    text-align:center;
+    font-size:.98rem;
+}
+    .rose-tip{
+    background:#f7f5ee;
+    border-left:4px solid #4b6043;
+    padding:14px;
+    margin:18px 20px;
+    border-radius:10px;
+    color:#555;
+    font-size:.95rem;
+    line-height:1.6;
+    font-style:italic;
+}
+    
+.btn{
+    display:block;
+    width:100%;
+    text-align:center;
+    background:#d68a3c;
+    color:white;
+    text-decoration:none;
+    padding:14px;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+}
+    
+.btn:hover{
+    background:#b8742d;
+    transform:translateY(-2px);
+}
+
+.about-btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:14px 28px;
+    background:#355537;
+    color:white;
+    text-decoration:none;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.about-btn:hover{
+    background:#2b452d;
+    transform:translateY(-2px);
+}
+.category-banner{
+    width:100%;
+    display:block;
+    margin:25px auto 20px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.category-description{
+    color:#666;
+    font-size:1.05rem;
+    line-height:1.7;
+    margin-top:-5px;
+    margin-bottom:25px;
+    max-width:850px;
+}
+
+.rose-picks{
+    background:#ffffff;
+    margin:70px auto;
+    padding:55px;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    max-width:1200px;
+}
+
+.rose-picks h2{
+    text-align:center;
+    color:#355537;
+    margin-bottom:15px;
+    font-size:2rem;
+}
+
+.rose-intro{
+    text-align:center;
+    max-width:750px;
+    margin:0 auto 45px;
+    color:#666;
+    line-height:1.8;
+    font-size:1.05rem;
+}
+
+.rose-grid{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+    
+.rose-card{
+    width:420px;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    border:1px solid #ece8df;
+    display:flex;
+    flex-direction:column;
+    transition:all .3s ease;
+}
+    
+.rose-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 14px 35px rgba(0,0,0,.12);
+}
+    
+.rose-card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    display:block;
+    border-bottom:1px solid #ece8df;
+}
+    
+.rose-card h3{
+    text-align:center;
+    color:#355537;
+    margin:24px 20px 12px;
+    font-size:1.3rem;
+}
+
+.rose-card p{
+    padding:0 25px;
+    text-align:center;
+    line-height:1.7;
+    color:#666;
+    flex-grow:1;
+}
+    
+.rose-highlight{
+    color:#4b6043;
+    font-weight:700;
+    text-align:center;
+    font-size:1rem;
+    margin:18px 20px 8px;
+} 
+
+.rose-badge{
+    background:#4b6043;
+    color:white;
+    text-align:center;
+    padding:10px;
+    font-size:.9rem;
+    font-weight:bold;
+    letter-spacing:.5px;
+}
+    
+.rose-card .btn{
+    margin:20px auto 25px;
+    width:80%;
+    text-align:center;
+}
+    
+footer{
+    text-align:center;
+    padding:40px 20px;
+    color:#777;
+}
+    
+.social{
+    margin-top:15px;
+}
+
+.social a{
+    text-decoration:none;
+    margin:0 10px;
+    color:#333;
+    font-weight:bold;
+}
+.quick-links{
+    max-width:1100px;
+    margin:35px auto 60px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:18px;
+}
+    
+.quick-links a{
+    text-decoration:none;
+    background:white;
+    color:#355537;
+    padding:16px 24px;
+    border-radius:14px;
+    font-weight:600;
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+    transition:.3s;
+    border:1px solid #ece8df;
+}
+    
+.quick-links a:hover{
+    background:#355537;
+    color:white;
+    transform:translateY(-4px);
+    box-shadow:0 10px 22px rgba(0,0,0,.12);
+}
+    
+</style>
+</head>
+
+<body>
+
+<header class="hero">
