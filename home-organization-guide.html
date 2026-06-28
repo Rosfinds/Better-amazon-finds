@@ -452,6 +452,84 @@ footer{
     font-size:1.08rem;
     margin-bottom:18px;
 }
+
+/* ---------- GUIDE PRODUCT ---------- */
+
+.guide-product{
+    max-width:1200px;
+    margin:90px auto;
+    padding:0 20px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.guide-product-image img{
+    width:100%;
+    border-radius:22px;
+    background:white;
+    padding:30px;
+    box-shadow:0 10px 28px rgba(0,0,0,.08);
+}
+
+.guide-product-content{
+    display:flex;
+    flex-direction:column;
+}
+
+.guide-number{
+    font-size:.95rem;
+    color:#9a9a9a;
+    font-weight:bold;
+    letter-spacing:2px;
+    margin-bottom:12px;
+}
+
+.guide-product-content h2{
+    color:#355537;
+    font-size:2.2rem;
+    margin-bottom:20px;
+}
+
+.guide-product-content p{
+    color:#666;
+    line-height:1.9;
+    font-size:1.08rem;
+    margin-bottom:22px;
+}
+
+.guide-product .rose-tip{
+    margin:0 0 30px;
+}
+
+.guide-product .btn{
+    width:260px;
+}
+
+@media (max-width:900px){
+
+    .guide-product{
+
+        grid-template-columns:1fr;
+
+        gap:35px;
+
+    }
+
+    .guide-product-content{
+
+        text-align:center;
+
+    }
+
+    .guide-product .btn{
+
+        width:100%;
+
+    }
+
+}
   
 </style>
 </head>
@@ -544,5 +622,44 @@ footer{
     <p>
         I hope they inspire you as much as they've helped our family. 💚
     </p>
+
+</section>
+
+  <section class="guide-product">
+
+    <div class="guide-product-image">
+
+        <img src="woven-storage-basket.png"
+             alt="Large Woven Storage Basket">
+
+    </div>
+
+    <div class="guide-product-content">
+
+        <span class="guide-number">01</span>
+
+        <h2>Large Woven Storage Basket</h2>
+
+        <p>
+            One of the easiest ways I've found to reduce clutter is by giving everyday items a designated place. This large cotton rope basket is perfect for storing blankets, toys, pillows, or laundry while adding warmth and style to any room.
+        </p>
+
+        <div class="rose-tip">
+
+            💚 <strong>Rose's Tip:</strong><br><br>
+
+            I keep one of these baskets in our living room for blankets and another in the kids' room for toys. It keeps everything looking tidy while making cleanup quick and easy.
+
+        </div>
+
+        <a href="https://www.amazon.com/HZFTJOY-Storage-Blanket-Organizing-Baskets/dp/B0FHKS8W5J?crid=104MIB79BRLIQ&dib=eyJ2IjoiMSJ9.ziFEVkbLLyvJVuhsSc9gw0SgSk09QqzPJZpG_zldNf8ceX-qWUDxR_5wB3ucDu8Yn3b5ExHr-Te-KE_qrTnoCcGALqcFUFSojVD4gK0O-2o0lcRoP8p1AHccE7aIcDU-VWqsazE7QuVtArUd3nJgb--B186RuGDnKLDkBiHcVmddgZz0ZTYk_ssOvuILQRoZkDmWeRsW8yWSM8QGWNUVBTy0NHcPI4EW8Y2IYrI0iVOlmF25HbgQx0YAKcP2QMKTOpzKPTb9K9XWJZbeq7AZKzzD7CCmANE_eUTDq15X0AA.4XSDrzGW8T7vcOEYsNP6RD-Nu2QolZOqCVFItabdnm4&dib_tag=se&keywords=storage%2Bbasket&qid=1782520422&sprefix=storage%2Bbasket%2Caps%2C192&sr=8-8&th=1&linkCode=ll2&tag=rosmeryguerra-20&linkId=7f9e90cdff4fd15739b7de7dc2c53a5c&language=en_US&ref_=as_li_ss_tl"
+           class="btn"
+           target="_blank">
+
+           View on Amazon
+
+        </a>
+
+    </div>
 
 </section>
