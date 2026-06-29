@@ -142,6 +142,96 @@ h2{
     transform:translateY(-3px);
 
 }
+
+/* ---------- SIGNATURE DIVIDER ---------- */
+
+.section-divider{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:18px;
+
+    margin:70px auto;
+
+    max-width:700px;
+
+}
+
+/* ---------- BIBLE VERSE ---------- */
+
+.bible-box{
+
+    background:#f7f5ee;
+
+    border-left:6px solid #355537;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    margin:50px auto;
+
+    text-align:center;
+
+}
+
+.verse-icon{
+
+    font-size:2rem;
+
+    margin-bottom:15px;
+
+}
+
+.verse-text{
+
+    font-size:1.3rem;
+
+    font-style:italic;
+
+    color:#355537;
+
+    line-height:1.8;
+
+    font-weight:600;
+
+}
+
+.verse-reference{
+
+    margin-top:18px;
+
+    color:#777;
+
+    font-weight:bold;
+
+}
+    
+.section-divider::before,
+
+.section-divider::after{
+
+    content:"";
+
+    flex:1;
+
+    height:2px;
+
+    background:#e6e0d4;
+
+}
+
+.section-divider span{
+
+    color:#7d8f71;
+
+    font-size:1.5rem;
+
+}
     
 </style>
 
@@ -173,6 +263,10 @@ If you're here, there's a good chance you're looking for simple ways to create a
 <p>
 My hope is that as you explore this website, you'll find practical ideas, trusted products, and encouragement that help you create a home your family loves coming back to—one small step at a time.
 </p>
+
+<div class="section-divider">
+    <span>🌿</span>
+</div>
         
     <h2>🌿 Where My Journey Began</h2>
 <p>
@@ -190,8 +284,11 @@ Over the years, I spent countless hours learning how to organize every room in o
 <p>
 Today, one of my greatest joys is sharing those lessons with other women. My hope is that through these guides, practical tips, and carefully chosen products, you'll feel encouraged to create a home that brings peace to your family—one small step at a time.
 </p>
-
-<h2>✝️ My Faith</h2>
+<div class="section-divider">
+    <span>🌿</span>
+</div>
+        
+   <h2>✝️ My Faith</h2>
         
 <p>
 Above all else, my faith in Jesus Christ is the foundation of everything I do.
@@ -210,27 +307,39 @@ My prayer is that every woman who visits this website feels encouraged rather th
 </p>
 
 <p>
-    <div class="bible-verse">
 
-<p class="verse">
+<div class="bible-box">
 
-<strong>"Let all things be done decently and in order."</strong>
+<div class="verse-icon">
+
+✝️
+
+</div>
+
+<p class="verse-text">
+
+"Let all things be done decently and in order."
 
 </p>
 
-<p class="reference">
+<p class="verse-reference">
 
-— 1 Corinthians 14:40
+1 Corinthians 14:40
 
 </p>
 
 </div>
         
+        
 "I'd be honored to walk alongside you as you create a more peaceful home—one small step at a time."
     
  </p>
-
-<div class="signature">
+        
+<div class="section-divider">
+    <span>🌿</span>
+</div>
+        
+ <div class="signature">
 
 With gratitude,<br>
 Rose 🌿
