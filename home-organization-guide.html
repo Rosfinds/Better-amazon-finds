@@ -530,7 +530,122 @@ footer{
     }
 
 }
-  
+
+  /* ---------- PRODUCT STORY ---------- */
+
+.product-story{
+    max-width:1200px;
+    margin:80px auto;
+    padding:0 20px;
+}
+
+.story-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.story-title span{
+    display:inline-block;
+    color:#7a8f73;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:15px;
+    font-size:.95rem;
+}
+
+.story-title h2{
+    color:#355537;
+    font-size:2.6rem;
+    margin-top:12px;
+}
+
+.story-layout{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.story-image img{
+    width:100%;
+    background:white;
+    border-radius:22px;
+    padding:35px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.story-text p{
+    color:#666;
+    line-height:1.9;
+    font-size:1.08rem;
+    margin-bottom:25px;
+}
+
+.story-text .rose-tip{
+    margin:30px 0;
+}
+
+.story-text .btn{
+    width:260px;
+}
+
+@media(max-width:900px){
+
+.story-layout{
+    grid-template-columns:1fr;
+}
+
+.story-title{
+    margin-bottom:35px;
+}
+
+.story-text{
+    text-align:center;
+}
+
+.story-text .btn{
+    width:100%;
+}
+
+}
+
+  /* ---------- GUIDE DIVIDER ---------- */
+
+.guide-divider{
+
+    text-align:center;
+
+    margin:80px auto;
+
+    color:#8da184;
+
+    font-size:2rem;
+
+    letter-spacing:10px;
+
+}
+
+.guide-divider::before{
+
+    content:"────────";
+
+    color:#d8d4ca;
+
+    margin-right:18px;
+
+}
+
+.guide-divider::after{
+
+    content:"────────";
+
+    color:#d8d4ca;
+
+    margin-left:18px;
+
+}
+
 </style>
 </head>
 
@@ -625,41 +740,57 @@ footer{
 
 </section>
 
-  <section class="guide-product">
+  <div class="guide-divider">
 
-    <div class="guide-product-image">
+    ✿
 
-        <img src="woven-storage-basket.png"
-             alt="Large Woven Storage Basket">
+</div>
+  
+  <section class="product-story">
 
-    </div>
+<div class="story-title">
 
-    <div class="guide-product-content">
+    <span>🧺 Favorite Storage Solution</span>
 
-        <span class="guide-number">01</span>
+    <h2>Large Woven Storage Basket</h2>
 
-        <h2>Large Woven Storage Basket</h2>
+</div>
 
-        <p>
-            One of the easiest ways I've found to reduce clutter is by giving everyday items a designated place. This large cotton rope basket is perfect for storing blankets, toys, pillows, or laundry while adding warmth and style to any room.
-        </p>
+<div class="story-layout">
 
-        <div class="rose-tip">
+<div class="story-image">
 
-            💚 <strong>Rose's Tip:</strong><br><br>
+<img src="woven-storage-basket.png"
+alt="Large Woven Storage Basket">
 
-            I keep one of these baskets in our living room for blankets and another in the kids' room for toys. It keeps everything looking tidy while making cleanup quick and easy.
+</div>
 
-        </div>
+<div class="story-text">
 
-        <a href="https://www.amazon.com/HZFTJOY-Storage-Blanket-Organizing-Baskets/dp/B0FHKS8W5J?crid=104MIB79BRLIQ&dib=eyJ2IjoiMSJ9.ziFEVkbLLyvJVuhsSc9gw0SgSk09QqzPJZpG_zldNf8ceX-qWUDxR_5wB3ucDu8Yn3b5ExHr-Te-KE_qrTnoCcGALqcFUFSojVD4gK0O-2o0lcRoP8p1AHccE7aIcDU-VWqsazE7QuVtArUd3nJgb--B186RuGDnKLDkBiHcVmddgZz0ZTYk_ssOvuILQRoZkDmWeRsW8yWSM8QGWNUVBTy0NHcPI4EW8Y2IYrI0iVOlmF25HbgQx0YAKcP2QMKTOpzKPTb9K9XWJZbeq7AZKzzD7CCmANE_eUTDq15X0AA.4XSDrzGW8T7vcOEYsNP6RD-Nu2QolZOqCVFItabdnm4&dib_tag=se&keywords=storage%2Bbasket&qid=1782520422&sprefix=storage%2Bbasket%2Caps%2C192&sr=8-8&th=1&linkCode=ll2&tag=rosmeryguerra-20&linkId=7f9e90cdff4fd15739b7de7dc2c53a5c&language=en_US&ref_=as_li_ss_tl"
-           class="btn"
-           target="_blank">
+<p>
 
-           View on Amazon
+One of the simplest ways I've found to reduce clutter is by giving everyday items a place to belong. A beautiful woven basket keeps blankets, toys, pillows, or laundry neatly stored while adding warmth and texture to any room.
 
-        </a>
+</p>
 
-    </div>
+<div class="rose-tip">
+
+💚 <strong>Rose's Tip:</strong>
+
+I keep one basket in our living room for blankets and another in the kids' room for toys. Cleanup is faster, and the room always feels cozy and welcoming.
+
+</div>
+
+<a href="https://www.amazon.com/HZFTJOY-Storage-Blanket-Organizing-Baskets/dp/B0FHKS8W5J?crid=104MIB79BRLIQ&dib=eyJ2IjoiMSJ9.ziFEVkbLLyvJVuhsSc9gw0SgSk09QqzPJZpG_zldNf8ceX-qWUDxR_5wB3ucDu8Yn3b5ExHr-Te-KE_qrTnoCcGALqcFUFSojVD4gK0O-2o0lcRoP8p1AHccE7aIcDU-VWqsazE7QuVtArUd3nJgb--B186RuGDnKLDkBiHcVmddgZz0ZTYk_ssOvuILQRoZkDmWeRsW8yWSM8QGWNUVBTy0NHcPI4EW8Y2IYrI0iVOlmF25HbgQx0YAKcP2QMKTOpzKPTb9K9XWJZbeq7AZKzzD7CCmANE_eUTDq15X0AA.4XSDrzGW8T7vcOEYsNP6RD-Nu2QolZOqCVFItabdnm4&dib_tag=se&keywords=storage%2Bbasket&qid=1782520422&sprefix=storage%2Bbasket%2Caps%2C192&sr=8-8&th=1&linkCode=ll2&tag=rosmeryguerra-20&linkId=970c69dc2b9caaee89773c17603ab3ae&language=en_US&ref_=as_li_ss_tl"
+class="btn"
+target="_blank">
+
+View on Amazon
+
+</a>
+
+</div>
+
+</div>
 
 </section>
