@@ -1,1 +1,1705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Peaceful Pantry Guide | Healthy Living & Family Finds</title>
+  
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f7f7f7;
+    color:#333;
+}
+
+.hero{
+    background:#ffffff;
+    text-align:center;
+    padding:20px;
+}
+
+.banner{
+    width:100%;
+    max-width:1200px;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
+}
+.navbar{
+    background:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:12px;
+    padding:18px 20px;
+    box-shadow:0 3px 12px rgba(0,0,0,.06);
+    margin-bottom:20px;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:#355537;
+    font-weight:600;
+    padding:10px 16px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.navbar a:hover{
+    background:#355537;
+    color:white;
+}
+    
+.disclosure{
+    background:#fff8e7;
+    padding:15px;
+    text-align:center;
+    font-size:.9rem;
+}
+
+/* ADD THIS HERE */
+
+.welcome{
+    background:white;
+    max-width:900px;
+    margin:40px auto;
+    padding:35px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.welcome h2{
+    color:#4b6043;
+    margin-bottom:15px;
+}
+
+.welcome p{
+    color:#555;
+    line-height:1.8;
+}
+
+/* THEN YOUR NEXT SECTION */
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:30px 20px;
+}
+
+.category-title{
+    margin:60px 0 20px;
+    font-size:2rem;
+    text-align:center;
+    color:#4b6043;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:35px;
+    margin-bottom:60px;
+    align-items:stretch;
+}
+
+@media (max-width: 900px){
+    .products{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .products{
+        grid-template-columns:1fr;
+    }
+}
+    
+.card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    border:1px solid #ece8df;
+    transition:all .3s ease;
+    display:flex;
+    flex-direction:column;
+    height:100%;
+}
+    
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:260px;
+    object-fit:contain;
+    background:white;
+    padding:20px;
+    border-radius:12px;
+}
+
+.card-content{
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    flex-grow:1;
+}
+    .card-content .btn{
+    margin-top:auto;
+}
+    
+.card h3{
+    margin-bottom:12px;
+    text-align:center;
+    color:#2f4732;
+    font-size:1.25rem;
+}
+    
+.card p{
+    color:#666;
+    margin-bottom:18px;
+    line-height:1.6;
+    text-align:center;
+    font-size:.98rem;
+}
+    .rose-tip{
+    background:#f7f5ee;
+    border-left:4px solid #4b6043;
+    padding:14px;
+    margin:18px 20px;
+    border-radius:10px;
+    color:#555;
+    font-size:.95rem;
+    line-height:1.6;
+    font-style:italic;
+}
+    
+.btn{
+    display:block;
+    width:100%;
+    text-align:center;
+    background:#d68a3c;
+    color:white;
+    text-decoration:none;
+    padding:14px;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+}
+    
+.btn:hover{
+    background:#b8742d;
+    transform:translateY(-2px);
+}
+
+.about-btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:14px 28px;
+    background:#355537;
+    color:white;
+    text-decoration:none;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.about-btn:hover{
+    background:#2b452d;
+    transform:translateY(-2px);
+}
+.category-banner{
+    width:100%;
+    display:block;
+    margin:25px auto 20px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.category-description{
+    color:#666;
+    font-size:1.05rem;
+    line-height:1.7;
+    margin-top:-5px;
+    margin-bottom:25px;
+    max-width:850px;
+}
+
+.rose-picks{
+    background:#ffffff;
+    margin:70px auto;
+    padding:55px;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    max-width:1200px;
+}
+
+.rose-picks h2{
+    text-align:center;
+    color:#355537;
+    margin-bottom:15px;
+    font-size:2rem;
+}
+
+.rose-intro{
+    text-align:center;
+    max-width:750px;
+    margin:0 auto 45px;
+    color:#666;
+    line-height:1.8;
+    font-size:1.05rem;
+}
+
+.rose-grid{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+    
+.rose-card{
+    width:420px;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    border:1px solid #ece8df;
+    display:flex;
+    flex-direction:column;
+    transition:all .3s ease;
+}
+    
+.rose-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 14px 35px rgba(0,0,0,.12);
+}
+    
+.rose-card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    display:block;
+    border-bottom:1px solid #ece8df;
+}
+    
+.rose-card h3{
+    text-align:center;
+    color:#355537;
+    margin:24px 20px 12px;
+    font-size:1.3rem;
+}
+
+.rose-card p{
+    padding:0 25px;
+    text-align:center;
+    line-height:1.7;
+    color:#666;
+    flex-grow:1;
+}
+    
+.rose-highlight{
+    color:#4b6043;
+    font-weight:700;
+    text-align:center;
+    font-size:1rem;
+    margin:18px 20px 8px;
+} 
+
+.rose-badge{
+    background:#4b6043;
+    color:white;
+    text-align:center;
+    padding:10px;
+    font-size:.9rem;
+    font-weight:bold;
+    letter-spacing:.5px;
+}
+    
+.rose-card .btn{
+    margin:20px auto 25px;
+    width:80%;
+    text-align:center;
+}
+    
+footer{
+    text-align:center;
+    padding:40px 20px;
+    color:#777;
+}
+    
+.social{
+    margin-top:15px;
+}
+
+.social a{
+    text-decoration:none;
+    margin:0 10px;
+    color:#333;
+    font-weight:bold;
+}
+.quick-links{
+    max-width:1100px;
+    margin:35px auto 60px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:18px;
+}
+    
+.quick-links a{
+    text-decoration:none;
+    background:white;
+    color:#355537;
+    padding:16px 24px;
+    border-radius:14px;
+    font-weight:600;
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+    transition:.3s;
+    border:1px solid #ece8df;
+}
+    
+.quick-links a:hover{
+    background:#355537;
+    color:white;
+    transform:translateY(-4px);
+    box-shadow:0 10px 22px rgba(0,0,0,.12);
+}
+
+/* ---------- WHY HOME ORGANIZATION ---------- */
+
+.why-organize{
+    max-width:1200px;
+    margin:70px auto;
+    padding:0 20px;
+}
+
+.why-organize h2{
+    text-align:center;
+    color:#355537;
+    font-size:2rem;
+    margin-bottom:15px;
+}
+
+.why-intro{
+    max-width:760px;
+    margin:0 auto 45px;
+    text-align:center;
+    color:#666;
+    line-height:1.8;
+    font-size:1.05rem;
+}
+
+.benefits{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+}
+
+.benefit-card{
+    background:white;
+    border-radius:18px;
+    padding:35px 25px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    border:1px solid #ece8df;
+    transition:.3s;
+}
+
+.benefit-card:hover{
+    transform:translateY(-6px);
+}
+
+.benefit-icon{
+    font-size:2.5rem;
+    margin-bottom:18px;
+}
+
+.benefit-card h3{
+    color:#355537;
+    margin-bottom:15px;
+}
+
+.benefit-card p{
+    color:#666;
+    line-height:1.7;
+}
+
+/* ---------- GUIDE INTRO ---------- */
+
+.guide-intro{
+    max-width:900px;
+    margin:80px auto 50px;
+    text-align:center;
+    padding:0 20px;
+}
+
+.guide-intro h2{
+    color:#355537;
+    font-size:2.2rem;
+    margin-bottom:20px;
+}
+
+.guide-intro p{
+    color:#666;
+    line-height:1.9;
+    font-size:1.08rem;
+    margin-bottom:18px;
+}
+
+/* ---------- GUIDE PRODUCT ---------- */
+
+.guide-product{
+    max-width:1200px;
+    margin:90px auto;
+    padding:0 20px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.guide-product-image img{
+    width:100%;
+    border-radius:22px;
+    background:white;
+    padding:30px;
+    box-shadow:0 10px 28px rgba(0,0,0,.08);
+}
+
+.guide-product-content{
+    display:flex;
+    flex-direction:column;
+}
+
+.guide-number{
+    font-size:.95rem;
+    color:#9a9a9a;
+    font-weight:bold;
+    letter-spacing:2px;
+    margin-bottom:12px;
+}
+
+.guide-product-content h2{
+    color:#355537;
+    font-size:2.2rem;
+    margin-bottom:20px;
+}
+
+.guide-product-content p{
+    color:#666;
+    line-height:1.9;
+    font-size:1.08rem;
+    margin-bottom:22px;
+}
+
+.guide-product .rose-tip{
+    margin:0 0 30px;
+}
+
+.guide-product .btn{
+    width:260px;
+}
+
+@media (max-width:900px){
+
+    .guide-product{
+
+        grid-template-columns:1fr;
+
+        gap:35px;
+
+    }
+
+    .guide-product-content{
+
+        text-align:center;
+
+    }
+
+    .guide-product .btn{
+
+        width:100%;
+
+    }
+
+}
+
+  /* ---------- PRODUCT STORY ---------- */
+
+.product-story{
+    max-width:1200px;
+    margin:80px auto;
+    padding:0 20px;
+}
+
+.story-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.story-title span{
+    display:inline-block;
+    color:#7a8f73;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:15px;
+    font-size:.95rem;
+}
+
+.story-title h2{
+    color:#355537;
+    font-size:2.6rem;
+    margin-top:12px;
+}
+
+.story-layout{
+    display:grid;
+    grid-template-columns:1.15fr .85fr;
+    gap:60px;
+    align-items:center;
+}
+
+  .story-layout.reverse{
+
+    grid-template-columns:.85fr 1.15fr;
+
+}
+
+  .story-layout.reverse .story-text{
+    order:1;
+}
+
+.story-layout.reverse .story-image{
+    order:2;
+}
+  
+  .story-image img{
+    width:100%;
+    background:white;
+    border-radius:22px;
+    padding:35px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.story-text p{
+    color:#666;
+    line-height:1.9;
+    font-size:1.08rem;
+    margin-bottom:25px;
+}
+
+.story-text .rose-tip{
+    margin:30px 0;
+}
+
+.story-text .btn{
+    width:260px;
+   margin-top:10px;
+}
+
+@media(max-width:900px){
+
+.story-layout{
+    grid-template-columns:1fr;
+}
+
+.story-title{
+    margin-bottom:35px;
+}
+
+.story-text{
+    text-align:center;
+}
+
+.story-text .btn{
+    width:100%;
+}
+
+}
+
+  /* ---------- GUIDE DIVIDER ---------- */
+
+.guide-divider{
+
+    text-align:center;
+
+    margin:100px auto;
+
+    color:#8da184;
+
+    font-size:2rem;
+
+    letter-spacing:10px;
+
+}
+
+.guide-divider::before{
+
+    content:"────────";
+
+    color:#d8d4ca;
+
+    margin-right:18px;
+
+}
+
+.guide-divider::after{
+
+    content:"────────";
+
+    color:#d8d4ca;
+
+    margin-left:18px;
+
+}
+
+  /* ---------- FROM ROSE ---------- */
+
+.from-rose{
+
+    max-width:900px;
+
+    margin:120px auto;
+
+    padding:55px;
+
+    background:white;
+
+    border-radius:24px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.from-rose h2{
+
+    color:#355537;
+
+    margin-bottom:25px;
+
+    font-size:2rem;
+
+}
+
+.from-rose p{
+
+    color:#666;
+
+    line-height:1.9;
+
+    font-size:1.08rem;
+
+    margin-bottom:22px;
+
+}
+
+.bible-verse{
+
+    background:#f7f5ee;
+
+    border-left:5px solid #355537;
+
+    padding:25px;
+
+    margin:35px 0;
+
+    border-radius:16px;
+
+}
+
+.verse{
+
+    color:#355537;
+
+    font-size:1.25rem;
+
+    font-style:italic;
+
+    font-weight:600;
+
+}
+
+.reference{
+
+    margin-top:10px;
+
+    color:#777;
+
+}
+
+/* ---------- CONTINUE YOUR ORGANIZATION JOURNEY ---------- */
+
+.coming-guides{
+    max-width:1200px;
+    margin:100px auto;
+    padding:0 20px;
+    text-align:center;
+}
+
+.coming-guides h2{
+    color:#355537;
+    font-size:2rem;
+    margin-bottom:20px;
+}
+
+.coming-guides > p{
+    max-width:700px;
+    margin:0 auto 45px;
+    color:#666;
+    line-height:1.8;
+}
+
+.guide-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.guide-card{
+    background:white;
+    border-radius:18px;
+    padding:30px 20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    border:1px solid #ece8df;
+    transition:.3s;
+}
+
+.guide-card:hover{
+    transform:translateY(-5px);
+}
+
+.guide-card h3{
+    color:#355537;
+    margin-bottom:12px;
+}
+
+.guide-card p{
+    color:#8a8a8a;
+    font-style:italic;
+}
+
+  .signature{
+
+    margin-top:35px;
+
+    color:#355537;
+
+    font-size:1.15rem;
+
+    line-height:1.8;
+
+    font-style:italic;
+
+}
+
+.signature strong{
+
+    font-size:1.4rem;
+
+}
+
+/* ---------- Guide Sections ---------- */
+
+.guide-section{
+    max-width:900px;
+    margin:50px auto 30px;
+    text-align:center;
+    padding:0 20px;
+}
+
+.guide-section h2{
+    color:#355537;
+    font-size:2rem;
+    margin-bottom:18px;
+}
+
+.guide-intro{
+    max-width:760px;
+    margin:0 auto 25px;
+    font-size:1.08rem;
+    line-height:1.8;
+    color:#555;
+}
+
+/* ---------- ROSE'S GENTLE REMINDER ---------- */
+
+.gentle-reminder{
+    max-width:900px;
+    margin:80px auto;
+    text-align:center;
+    padding:0 20px;
+}
+
+.gentle-reminder h2{
+    color:#355537;
+    font-size:2rem;
+    margin-bottom:25px;
+}
+
+.reminder-card{
+    background:#f7f4eb;
+    border-left:6px solid #355537;
+    border-radius:18px;
+    padding:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+.reminder-card p{
+    font-size:1.15rem;
+    line-height:1.9;
+    color:#555;
+    margin-bottom:18px;
+}
+
+.reminder-card p:first-child{
+    font-weight:700;
+    color:#355537;
+    font-size:1.4rem;
+}
+  
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+  
+<img src="peaceful-pantry-guide-banner.png"
+     alt="The Peaceful Pantry Guide"
+     class="banner">
+  
+</header>
+<section class="welcome">
+
+<h2>🥫 Welcome to The Peaceful Pantry Guide</h2>
+
+<p>
+The pantry is one of the hardest-working spaces in any home. When it's organized, preparing meals becomes easier, grocery shopping feels less stressful, and everyday routines run much more smoothly.
+</p>
+
+<p>
+Over the years, I've learned that creating a peaceful pantry isn't about having a picture-perfect space—it's about building simple systems that work for your family. A few thoughtfully chosen products can save time, reduce waste, and make your kitchen feel calmer every day.
+</p>
+
+<p>
+In this guide, I'm sharing the products I personally recommend, practical organization ideas, and simple tips that have helped our family keep our pantry functional, welcoming, and easy to maintain.
+</p>
+
+<p>
+I hope this guide encourages you to organize one shelf, one basket, and one small step at a time. 💚
+</p>
+
+</section>
+  
+  <section class="why-organize">
+
+    <h2>🌿 Why Home Organization Matters</h2>
+
+    <p class="why-intro">
+        A well-organized home isn't about perfection—it's about creating simple systems that make everyday life easier. Small changes can save time, reduce stress, and help your whole family enjoy a calmer home.
+    </p>
+
+    <div class="benefits">
+
+        <div class="benefit-card">
+            <div class="benefit-icon">⏰</div>
+            <h3>Saves Time</h3>
+            <p>
+                When everything has its place, you spend less time searching and more time enjoying what matters most.
+            </p>
+        </div>
+
+        <div class="benefit-card">
+            <div class="benefit-icon">🌿</div>
+            <h3>Reduces Stress</h3>
+            <p>
+                Organized spaces create a calmer environment and make daily routines feel easier and more enjoyable.
+            </p>
+        </div>
+
+        <div class="benefit-card">
+            <div class="benefit-icon">👨‍👩‍👧‍👦</div>
+            <h3>Helps the Whole Family</h3>
+            <p>
+                Simple organization systems make it easier for everyone to know where things belong.
+            </p>
+        </div>
+
+        <div class="benefit-card">
+            <div class="benefit-icon">🏡</div>
+            <h3>Creates Peaceful Spaces</h3>
+            <p>
+                A tidy home feels more welcoming, relaxing, and enjoyable for your family and guests.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+  <section class="guide-intro">
+
+   <h2>🥫 My Favorite Pantry Organization Essentials</h2>
+    
+ <p>
+These are the pantry organization products I use and genuinely recommend to create a space that's functional, organized, and easy to maintain. Each one serves a purpose and has helped simplify our daily routines.
+</p>
+
+<p>
+You don't need to organize everything at once. Start with one shelf, one category, and one small step at a time. 💚
+</p>
+  </section>
+  
+<section class="guide-section">
+
+<h2>🥫 Step 1 — Empty & Sort Your Pantry</h2>
+
+<p class="guide-intro">
+
+Before buying a single organizer, start by removing everything from your pantry. Check expiration dates, donate food your family won't use, and group similar items together. This simple first step helps you see exactly what you have and what storage solutions you actually need.
+
+</p>
+
+<div class="rose-tip">
+
+💚 <strong>Rose's Tip:</strong>
+
+I like making four simple piles:
+<strong>Baking</strong>,
+<strong>Breakfast</strong>,
+<strong>Snacks</strong>, and
+<strong>Canned Goods.</strong>
+
+Once everything is grouped together, organizing becomes much easier.
+
+</div>
+
+</section>
+  
+  <div class="guide-divider">
+
+    ✿
+
+</div>
+<section class="guide-section">
+
+<h2>🌾 Step 2 — Store Dry Goods</h2>
+
+<p class="guide-intro">
+
+Flour, sugar, pasta, rice, cereal, beans, and snacks all stay fresher when they're transferred into airtight containers. Matching containers also create a cleaner pantry and make it much easier to see when you're running low on ingredients.
+
+</p>
+
+</section>
+  <section class="product-story">
+
+    <div class="story-title">
+
+        <span>🥫 Pantry Organization Made Simple</span>
+
+        <h2>24-Piece Airtight Pantry Storage Containers</h2>
+
+    </div>
+
+    <div class="story-layout reverse">
+
+        <div class="story-text">
+
+            <p>
+                Pantry organization becomes much easier when every ingredient has its own container. These airtight containers keep food fresh while creating a clean, organized pantry that's easy to maintain.
+            </p>
+
+            <div class="rose-tip">
+
+                💚 <strong>Rose's Tip:</strong>
+
+                I store flour, sugar, pasta, cereal, snacks, and baking ingredients in matching containers. It saves space, reduces clutter, and makes meal prep much faster.
+
+            </div>
+
+            <a href="https://www.amazon.com/Airtight-Containers-Vtopmart-Organization-Canisters/dp/B08ZK5WDWN?crid=1Z4QDDOWIMQYR&dib=eyJ2IjoiMSJ9.l1O_gUengvxaPK38-Opkey8Y1Aa4f2qTwZIfzejqJeW42NCaRup-XAns4qiKXSoTnVTqAWhpVYqEsVABEr3rthOtQDOVPHNJw1bVArn08gwJpia-x7xtVUUGUcL2sGaQu-zGHxI-MlLAxP6XcuMNLoirHSUg_XvUlPOyyNDNgELoLvciwmLh0ztpoENfRjbcGpUTeBLMWUujlM2F51Ugn33AQnUpaL316BCG6wqEsE292bHIvFg_AzKx2Dw10GwzTdB6Q-N0_X5X3Kqh55H8uD2ML27mt-NcGTCTc9-klIU.thigKA0QcV-jO0EYQeg4c54PSYkuG728nYEpVYApbmg&dib_tag=se&keywords=pantry%2Borganization&qid=1782594287&sprefix=pantry%2Borganization%2Caps%2C162&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=ll2&tag=rosmeryguerra-20&linkId=2d77153aa28bb7a6e9c9f6466a60bf6a&language=en_US&ref_=as_li_ss_tl"
+               class="btn"
+               target="_blank">
+
+                View on Amazon
+
+            </a>
+
+        </div>
+
+        <div class="story-image">
+
+            <img src="pantry-storage-containers.png"
+                 alt="24-Piece Airtight Pantry Storage Containers">
+
+        </div>
+
+    </div>
+
+</section>
+
+  <div class="guide-divider">
+
+    ✿
+
+</div>
+  <section class="guide-section">
+
+<h2>📦 Step 3 — Create Pantry Zones</h2>
+
+<p class="guide-intro">
+
+Give every category its own home. Using clear bins for snacks, breakfast items, baking supplies, and drinks keeps your pantry tidy and helps everyone in the family find what they need without making a mess.
+
+</p>
+
+</section>
+  
+  <section class="product-story">
+
+    <div class="story-title">
+
+        <span>🌿 Rose Recommends</span>
+
+        <h2>Clear Pantry Organizer Bins</h2>
+
+    </div>
+
+    <div class="story-layout">
+
+        <div class="story-image">
+
+            <img src="clear-pantry-organizer-bins.png"
+                 alt="Clear Pantry Organizer Bins">
+
+        </div>
+
+        <div class="story-text">
+
+            <p>
+
+                A few clear storage bins can completely transform a pantry, refrigerator, or cabinet. They help group similar items together, making everything easier to find while keeping shelves neat and clutter-free.
+
+            </p>
+
+            <div class="rose-tip">
+
+                💚 <strong>Rose's Tip:</strong><br><br>
+
+                I like using separate bins for snacks, breakfast foods, baking supplies, and drink mixes. It keeps everything organized and makes it easy for everyone in the family to find what they need without creating a mess.
+
+            </div>
+
+            <a href="https://www.amazon.com/Vtopmart-Storage-Organizer-Organization-Compartment/dp/B0B9BDQTV9?dib=eyJ2IjoiMSJ9.l1O_gUengvxaPK38-Opkey8Y1Aa4f2qTwZIfzejqJeW42NCaRup-XAns4qiKXSoTnVTqAWhpVYqEsVABEr3rtlM4vn0M8UdpSWN5cVVilov9ggSjXfHSETlNgk4IvgSQbpG1Mv9q0tFbzrgk2Crb0MT6k0q2Kcmn7xhhp5_vdkNqwg6ZvobSGcXrY2IdfyYVpOJtw2leXoAQwh1UNB8u4aEn-z-k3z4abH7jyusNW6pOVzEi4ZPeKYL4WZ-3n9aflncoXqulr79nATeJXCVAG1YCLlaXsOvo7E0y4tmIkZw.uxKs4_eT3JMZLK6i_l3jR5x8uENq-rxMRaPtbiN7EPI&dib_tag=se&keywords=pantry%2Borganizers%2Band%2Bstorage&qid=1782594772&sr=8-20-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1&linkCode=ll2&tag=rosmeryguerra-20&linkId=c54001c10cf2bc9e0df4b6b2ee27f162&language=en_US&ref_=as_li_ss_tl"
+               class="btn"
+               target="_blank">
+
+                View on Amazon
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+  <div class="guide-divider">
+    ✿
+</div>
+  
+<section class="guide-section">
+
+<h2>🥫 Step 4 — Organize Canned Foods</h2>
+
+<p class="guide-intro">
+
+Canned goods are one of the easiest areas to lose track of. A simple organizer keeps labels visible, saves shelf space, and helps you rotate older cans to the front.
+
+</p>
+
+</section>
+  <section class="product-story">
+
+    <div class="story-title">
+
+        <span>🌿 Rose Recommends</span>
+
+        <h2>3-Tier Can Organizer Rack</h2>
+
+    </div>
+
+    <div class="story-layout reverse">
+
+        <div class="story-text">
+
+            <p>
+                A can organizer keeps canned foods visible, organized, and easy to reach. Instead of cans getting lost in the back of the pantry, everything stays neatly arranged and ready when you need it.
+            </p>
+
+            <div class="rose-tip">
+
+                💚 <strong>Rose's Tip:</strong><br><br>
+
+                I organize vegetables, soups, beans, and sauces by category. It saves time while cooking and helps me keep track of what needs to be restocked.
+
+            </div>
+
+            <a href="https://www.amazon.com/SimpleHouseware-Stackable-Rack-Organizer-Chrome/dp/B01IIXR2II?crid=25EINJYC6CE7N&dib=eyJ2IjoiMSJ9.5W4vNanzJ_qhpKFRHfEp5u1MNVYDb_35C_dRiG4MsQjkvSYrLB9q3CRpkZoimRUWQ9ItDH5EsqfOGg4TD2MOgDrejg7ddwXWiJyHqtt8GkDXAt4RaNYClPU3X2AtFANW6kAxqE3WcaKVPStstMQbgnmJ-LGf9khm967IsJY4mirEY4TobYndidNXEeDEOQWGlJ2UQG_VSkPJ5vzkF3r5COjFdbr2O-waSnHZom5xVbYN2vAFz-lUe4TyCROVKkd_e3Xphe8KT_-bNhUQEtFz2Au512nB3g2OqEvdY3sCoKo.9hz8T30Cuu3dt3j0G1jCosx8CDe6maCj9Wcy8hznMUc&dib_tag=se&keywords=pantry%2Borganizers%2Band%2Bstorage%2Bcans&qid=1782596520&sprefix=pantry%2Borganizers%2Band%2Bstorage%2Bcans%2Caps%2C166&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=ll2&tag=rosmeryguerra-20&linkId=e66ebf3f7da5a5fe61ffb2846f4466d0&language=en_US&ref_=as_li_ss_tl"
+               class="btn"
+               target="_blank">
+
+                View on Amazon
+
+            </a>
+
+        </div>
+
+        <div class="story-image">
+
+            <img src="can-organizer-rack.png"
+                 alt="3-Tier Can Organizer Rack">
+
+        </div>
+
+    </div>
+
+</section>
+
+  <div class="guide-divider">
+    ✿
+</div>
+  
+<section class="guide-section">
+
+<h2>🏷️ Step 5 — Label Everything</h2>
+
+<p class="guide-intro">
+
+Labels are the finishing touch. They help every family member know where things belong, making it much easier to keep your pantry organized long after you've finished the project.
+
+</p>
+
+</section>
+  <section class="product-story">
+
+    <div class="story-title">
+
+        <span>🌿 Rose Recommends</span>
+
+        <h2>Portable Bluetooth Label Maker</h2>
+
+    </div>
+
+    <div class="story-layout">
+
+        <div class="story-image">
+
+            <img src="portable-label-maker.png"
+                 alt="Portable Bluetooth Label Maker">
+
+        </div>
+
+        <div class="story-text">
+
+            <p>
+                Labels make every organizing project easier. This compact Bluetooth label maker helps create neat labels for pantry containers, storage baskets, office supplies, school items, and more.
+            </p>
+
+            <div class="rose-tip">
+
+                💚 <strong>Rose's Tip:</strong><br><br>
+
+                Once I started labeling containers and baskets, everyone in the family knew where things belonged. It made staying organized so much easier.
+
+            </div>
+
+            <a href="https://www.amazon.com/Nelko-P21-Bluetooth-Templates-Organizing/dp/B0CHJR142G?crid=3BC9XJUUB9V8P&dib=eyJ2IjoiMSJ9.4eO0IXL9IM6P_TyIqERg7W30zn0x-K96hMO8UE6Jm27uS_kpTxy8dVVE3BdVODeoaOt8OJ1pqFD3sJnx4m0rz3H0vnHxa_yxj1florcGd2vDPoUaiVqd4D1NXv4Cqs042gjodORgO6cY92Pq_-v3jWUZZQ3Gr0JOQcT43sWQ-V_ilOWIpifo58xJ6A8bAjRSpF4DCI5viNWdaYliOkTSlKfuDSJagQkP9Lek5YICHoo.9LKciQSjlCISnUQFEQHyRa8-MRfOClI-schstR8i2zU&dib_tag=se&keywords=label%2Bmaker%2Bbest%2Bsellers%2Bwith%2Btape&qid=1782598813&sprefix=label%2Bmaker%2Bbest%2Bs%2Caps%2C156&sr=8-6-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1&linkCode=ll2&tag=rosmeryguerra-20&linkId=a88db572ded62844e8482e7f68fa6b4e&language=en_US&ref_=as_li_ss_tl"
+               class="btn"
+               target="_blank">
+
+                View on Amazon
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+  <div class="guide-divider">
+    ✿
+</div>
+
+<section class="guide-section">
+
+<h2>🥣 Step 6 — Store Everyday Ingredients</h2>
+
+<p>
+Glass pantry jars are perfect for the ingredients you reach for most often. They keep flour, pasta, rice, sugar, oats, coffee, and other pantry staples fresh while creating a beautiful, organized space that's easy to maintain.
+</p>
+
+<div class="product-story">
+
+<div class="story-title">
+
+<span>🌿 ROSE RECOMMENDS</span>
+
+<h2>Glass Pantry Storage Jars with Bamboo Lids</h2>
+
+</div>
+
+<div class="story-layout reverse">
+
+<div class="story-text">
+
+<p>
+These elegant glass jars instantly make your pantry feel calmer and more organized. I especially love using them for everyday ingredients because I can quickly see what needs to be refilled while keeping everything fresh.
+</p>
+
+<div class="rose-tip">
+
+💚 <strong>Rose's Tip:</strong><br><br>
+
+I like storing flour, sugar, pasta, rice, oats, and coffee in matching glass jars. They add warmth to the pantry while making meal prep much more enjoyable.
+
+</div>
+
+<a href="https://www.amazon.com/Yirilan-Storage-Containers-4000ml-Airtight/dp/B0FHKMXBPX?content-id=amzn1.sym.f1e24090-399e-445e-b618-1765f1ce436c%3Aamzn1.sym.f1e24090-399e-445e-b618-1765f1ce436c&crid=1LPRM4JQ2MLI8&cv_ct_cx=flour%2Band%2Bsugar%2Bcontainers%2C%2Bglass%2Bbest%2Bsellers&keywords=flour%2Band%2Bsugar%2Bcontainers%2C%2Bglass%2Bbest%2Bsellers&pd_rd_i=B0FHKMXBPX&pd_rd_r=758a36d0-fdd9-401d-a034-67cc94078a4e&pd_rd_w=2QpVk&pd_rd_wg=W8m3H&pf_rd_p=f1e24090-399e-445e-b618-1765f1ce436c&pf_rd_r=X8Z0H677DZ4P0YJ5277N&qid=1782776718&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=flour%2Band%2Bsugar%2Bcontainers%2C%2Bglass%2Bbest%2Bsellers%2Cspecialty-aps%2C133&sr=1-1-72da3c38-bbeb-4ec6-a5c8-94f3516831b3-spons&srs=121082092011&aref=fWCrfPnku9&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1&linkCode=ll2&tag=rosmeryguerra-20&linkId=4384f9d16c0d27ca27787b687c6c24f6&language=en_US&ref_=as_li_ss_tl"
+class="btn"
+target="_blank">
+
+View on Amazon
+
+</a>
+
+</div>
+
+<div class="story-image">
+
+<img src="glass-pantry-jars.png"
+alt="Glass Pantry Storage Jars with Bamboo Lids">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<div class="guide-divider">
+    ✿
+</div>
+<section class="guide-section">
+
+<h2>🥣 Step 7 — Make Everyday Cooking Easier</h2>
+
+<p>
+For the ingredients your family uses every day, a multipurpose glass dispenser makes cooking faster, cleaner, and more enjoyable. It's one of those small upgrades that makes your pantry feel both beautiful and functional.
+</p>
+
+<div class="product-story">
+
+<div class="story-title">
+
+<span>🌿 ROSE RECOMMENDS</span>
+
+<h2>Multipurpose Glass Food Dispenser</h2>
+
+</div>
+
+<div class="story-layout">
+
+<div class="story-image">
+
+<img src="glass-food-dispenser.png"
+alt="Multipurpose Glass Food Dispenser">
+
+</div>
+
+<div class="story-text">
+
+<p>
+
+I love using this dispenser for everyday pantry staples like rice, oats, cereal, beans, pet food, or coffee. The built-in measuring cup makes serving quick, while the airtight bamboo lid keeps everything fresh.
+
+</p>
+
+<div class="rose-tip">
+
+💚 <strong>Rose's Tip:</strong><br><br>
+
+Choose one ingredient your family reaches for every day and store it here. You'll use it constantly, and your pantry will instantly feel more organized.
+
+</div>
+
+<a href="https://www.amazon.com/Container-Dispenser-Creative-Organization-Airtight/dp/B086QXGCN5?crid=1K5XRK5U5TQYT&dib=eyJ2IjoiMSJ9.t1HBPWjV134qFS0NOfHql_V6xm8B6LrA7ZtNSDiMSPX5jVyHpuZTBF1PWp8b3WxZ-pyWzK3LI9nyBShuaJccP8Jw4Wc8C-C2W24G-73zs03iEOYXP2LLEnqsOJl9_VCSzbpw93tdndQExxlgQidtQTDbqX8utzQoMHrR9vH0SuDL-SfhO--by9FRU4L9svByRWwYoDrlZGSUyUDGpi1IfjdW7aK_VqXgUHZJD0frb8c.EK6fNaLO7YcL_OOjbtKVdtJ7i1M_WFad_gOd0MCdMR4&dib_tag=se&keywords=rice%2Band%2Bcereal%2Bdispenser&qid=1782778880&sprefix=rice%2Band%2Bcereal%2Bdispense%2Cspecialty-aps%2C147&sr=8-14&th=1&linkCode=ll2&tag=rosmeryguerra-20&linkId=2ef4af1369e65dc231484a9ceba6d444&language=en_US&ref_=as_li_ss_tl"
+class="btn"
+target="_blank">
+
+View on Amazon
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+  <div class="guide-divider">
+    ✿
+</div>
+<section class="guide-section">
+
+<h2>🌀 Step 8 — Organize Corner Shelves & Hard-to-Reach Spaces</h2>
+
+<p>
+Deep pantry shelves and cabinet corners often become cluttered because it's difficult to reach the items in the back. A Lazy Susan keeps everything visible and within reach with one simple spin.
+</p>
+
+<div class="product-story">
+
+<div class="story-title">
+
+<span>🌿 ROSE RECOMMENDS</span>
+
+<h2>Clear Lazy Susan Turntable Organizer</h2>
+
+</div>
+
+<div class="story-layout reverse">
+
+<div class="story-text">
+
+<p>
+
+This clear turntable is one of my favorite organization tools because it works almost anywhere. I use it for cooking oils, spices, sauces, coffee supplies, baking ingredients, vitamins, and even snacks. Everything stays organized, visible, and easy to grab.
+
+</p>
+
+<div class="rose-tip">
+
+💚 <strong>Rose's Tip:</strong><br><br>
+
+I love using a Lazy Susan for the items we reach for every day. Nothing gets pushed to the back of the shelf, and a quick spin lets me find exactly what I need in seconds. It's also perfect for the refrigerator, bathroom, under the sink, or even a coffee station!
+
+</div>
+
+<a href="https://www.amazon.com/Turntable-Organizer-Organization-Container-Countertop/dp/B09CKRQMKZ?crid=1U7CB72V3D80E&dib=eyJ2IjoiMSJ9.WE12MQHNR8O2Kxz9nMQjM8B5SGWb4XLUkJ5h-ut6ErsdTGM8bz7YQ5QNJ2aG_8bqJpYp6Jazb1hjetiWPMgOVJW767o7Eg28OP2BBTKkg_dQ6eEHzvjc22ssdhONHvh_MSQVZnOk3y5T_IOAEBibaxmk3eb3hDlZbfsacceksR2fWSYk76pfW776Q1hDUNbHeSInnYz3gnT5qePGWZ2STQ-zvvx8JUSFywaZ2E6mjOFiW72NqdYBpg_zTYZ3STrp9PauliD4xBcFLPTaEr6463GRsf3EwmVGyuIa7Thzgw4.UuuQpIqZ56d0FQ1jHYcoURg1ZnQB89J2iAqHiW5YPOE&dib_tag=se&keywords=lazy%2Bsusan%2Bfor%2Bpantry&qid=1782780024&sprefix=lazy%2Bsusan%2Bfor%2Bpantry%2Caps%2C167&sr=8-18&th=1&linkCode=ll2&tag=rosmeryguerra-20&linkId=2611b41889f35d561e0ca6fbf7023fb5&language=en_US&ref_=as_li_ss_tl"
+class="btn"
+target="_blank">
+
+View on Amazon
+
+</a>
+
+</div>
+
+<div class="story-image">
+
+<img src="lazy-susan-turntable.png"
+alt="Clear Lazy Susan Turntable Organizer">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+  <div class="guide-divider">
+    ✿
+</div>
+<section class="guide-section">
+
+<h2>🍎 Step 9 — Create a Family Snack Station</h2>
+
+<p>
+One of the easiest ways to keep your pantry organized is by giving snacks their own dedicated space. A rolling snack cart keeps grab-and-go favorites visible, organized, and easy for the whole family to access.
+</p>
+
+<div class="product-story">
+
+<div class="story-title">
+
+<span>🌿 ROSE RECOMMENDS</span>
+
+<h2>Rolling Snack Organizer Cart</h2>
+
+</div>
+
+<div class="story-layout reverse">
+
+<div class="story-text">
+
+<p>
+
+This rolling organizer is perfect for chips, granola bars, fruit snacks, juice boxes, breakfast items, and lunch supplies. Everything stays together in one place, making snack time quicker and helping reduce pantry clutter.
+
+</p>
+
+<div class="rose-tip">
+
+💚 <strong>Rose's Tip:</strong><br><br>
+
+I love creating a dedicated snack station where everyone knows exactly where to find their favorite snacks—and just as importantly, where to put them back! It encourages independence for kids while keeping the pantry neat and organized.
+
+</div>
+
+<p>
+
+Although I use mine in the pantry, it's also perfect for a playroom, homeschool area, dorm room, or even a coffee station.
+
+</p>
+
+<a href="https://www.amazon.com/OKZEST-Vegetable-Stackable-Organizer-Bathroom/dp/B08SHL9C63?crid=W6U702U3Z0P&dib=eyJ2IjoiMSJ9.FuK9YdC3I3AiOT2cIa7V_jUU__xm3EtdqmzQBP7Fv7ubDAmaQCbsb_OjXRZA-Z0L0k7BUkZ1xFlldsrk5fSLbUUubGDQY85TkxFXJTwppcEFYEJmgMeUGsRRZ815dYCK5QCwoic9F6gaWotQdArl4rk2bKnGthhnn5BppXjtUXi7rWead5NW1qLi-t4WMzP22xETzkWir-11ofyRZfzDxzHfMsIxyqFP3GNBjPYTvpD9ii0nZRzbcRp3OvV9xfFzllQRFJ6_CUu98epYulYgjDRN1wgzSGNXHv6ly_BLwkw.Rr0fgLf5WtBAa1KHD_39enkMHH1YPWPX960H5sWBVAw&dib_tag=se&keywords=pantry%2Borganization%2Bsolutions&qid=1782781202&sprefix=pantry%2Borganization%2Bsolutions%2Caps%2C161&sr=8-19&th=1&linkCode=ll2&tag=rosmeryguerra-20&linkId=b4b72989e6af7183a1504f52638b3f55&language=en_US&ref_=as_li_ss_tl"
+class="btn"
+target="_blank">
+
+View on Amazon
+
+</a>
+
+</div>
+
+<div class="story-image">
+
+<img src="snack-organizer-cart.png"
+alt="Rolling Snack Organizer Cart">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+  
+  <section class="guide-section">
+
+<h2>⚠️ 5 Common Pantry Mistakes to Avoid</h2>
+
+<p class="guide-intro">
+
+Creating an organized pantry isn't about buying more containers—it's about creating simple systems that work for your family. Here are a few mistakes I've learned to avoid over the years.
+
+</p>
+
+<div class="rose-tip">
+
+❌ Buying organizers before measuring your shelves.<br><br>
+
+❌ Keeping expired food that takes up valuable space.<br><br>
+
+❌ Mixing different food categories together.<br><br>
+
+❌ Forgetting to rotate older food to the front.<br><br>
+
+❌ Trying to organize the entire pantry in one day.
+
+</div>
+
+<p class="guide-intro">
+
+Remember, your pantry doesn't have to be perfect. Every small improvement makes everyday life a little easier.
+
+</p>
+
+</section>
+  
+<section class="guide-section">
+
+<h2>💚 Rose's Weekly Pantry Reset</h2>
+
+<p class="guide-intro">
+
+Keeping a pantry organized doesn't require hours of work every week. I spend about 10 minutes once a week doing a quick reset, and it helps prevent clutter from building up again.
+
+</p>
+
+<div class="rose-tip">
+
+✔️ Throw away expired food.<br><br>
+
+✔️ Refill pantry containers as needed.<br><br>
+
+✔️ Move older products to the front so they get used first.<br><br>
+
+✔️ Wipe one shelf if needed.<br><br>
+
+✔️ Make a quick grocery list of anything that's running low.
+
+</div>
+
+<p class="guide-intro">
+
+Small, consistent habits make a much bigger difference than one big organizing project. Progress is what creates a peaceful pantry—not perfection.
+
+</p>
+
+</section>
+
+  <section class="gentle-reminder">
+
+    <h2>🌿 Rose's Gentle Reminder</h2>
+
+    <div class="reminder-card">
+
+        <p>
+
+            A peaceful pantry isn't created in a day.
+
+        </p>
+
+        <p>
+
+            It's built one shelf, one habit, and one prayer at a time.
+
+        </p>
+
+        <p>
+
+            Give yourself grace as you learn. Every small step you take today is creating a home that will bless your family tomorrow. 💚
+
+        </p>
+
+    </div>
+
+</section>
+  <section class="guide-section">
+
+<h2>✅ Pantry Organization Checklist</h2>
+
+<p class="guide-intro">
+
+Use this simple checklist as you organize your pantry. Don't worry about finishing everything in one day. Check off one task at a time and celebrate your progress.
+
+</p>
+
+<div class="reminder-card" style="text-align:left;">
+
+<p>☐ Empty every shelf</p>
+
+<p>☐ Throw away expired food</p>
+
+<p>☐ Group similar foods together</p>
+
+<p>☐ Transfer dry goods into containers</p>
+
+<p>☐ Organize canned foods</p>
+
+<p>☐ Create snack zones</p>
+
+<p>☐ Label containers and baskets</p>
+
+<p>☐ Wipe shelves clean</p>
+
+<p>☐ Restock your pantry</p>
+
+<p>☐ Enjoy your peaceful pantry 💚</p>
+
+</div>
+
+</section>
+  <section class="from-rose">
+
+    <h2>💚 From Rose</h2>
+
+    <p>
+        Creating an organized home isn't about having a picture-perfect house. It's about creating a peaceful place where your family can rest, grow, and enjoy life together.
+    </p>
+
+    <p>
+        I've learned that even small changes—organizing one drawer, one shelf, or one room at a time—can make everyday life feel less stressful and more joyful. My hope is that these simple ideas encourage you to create a home that serves your family well and allows you to spend more time on what truly matters.
+    </p>
+
+    <div class="bible-verse">
+
+        <p class="verse">
+
+            <strong>"Let all things be done decently and in order."</strong>
+
+        </p>
+
+        <p class="reference">
+            — 1 Corinthians 14:40
+        </p>
+
+    </div>
+
+    <p class="closing">
+        Thank you for visiting my guide. I hope it inspires you to organize one small space at a time. May God bless your home and your family. 💚
+    </p>
+   
+<p class="signature">
+
+With love,<br>
+
+<strong>Rose</strong>
+
+</p>
+  
+</section>
+
+  <h3>🌿 Free Printable</h3>
+
+<p>
+Print this checklist and keep it inside your pantry while you organize.
+
+One small step at a time.
+</p>
+  <a href="Healthy-Living-Family-Finds-Pantry-Checklist.pdf"
+   class="btn"
+   download>
+
+⬇ Download FREE Pantry Checklist (PDF)
+
+</a>
+  
+  <section class="coming-guides">
+
+    <h2>🌿 Continue Your Organization Journey</h2>
+
+    <p>
+        Every room in your home deserves simple systems that make life easier. I'm creating detailed guides for each area to help you organize one space at a time.
+    </p>
+
+    <div class="guide-grid">
+
+        <div class="guide-card">
+            <h3>🛁 Bathroom Organization</h3>
+            <p>Coming Soon</p>
+        </div>
+
+        <div class="guide-card">
+            <h3>🛋️ Living Room Organization</h3>
+            <p>Coming Soon</p>
+        </div>
+
+        <div class="guide-card">
+            <h3>🧺 Laundry Room Organization</h3>
+            <p>Coming Soon</p>
+        </div>
+
+        <div class="guide-card">
+            <h3>👧 Kids' Room Organization</h3>
+            <p>Coming Soon</p>
+        </div>
+
+    </div>
+
+</section>
