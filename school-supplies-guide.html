@@ -125,7 +125,7 @@ body{
     overflow:hidden;
     box-shadow:0 8px 20px rgba(0,0,0,.08);
     border:1px solid #ece8df;
-    transition:all .3s ease;
+    transition:transform .3s ease, box-shadow .3s ease;
     display:flex;
     flex-direction:column;
     height:100%;
@@ -196,8 +196,9 @@ body{
 .btn:hover{
     background:#b8742d;
     transform:translateY(-2px);
+    box-shadow:0 8px 18px rgba(0,0,0,.15);
 }
-
+    
 .about-btn{
     display:inline-block;
     margin-top:25px;
@@ -452,13 +453,6 @@ footer{
     margin-bottom:18px;
 }
 
-/* ---------- GUIDE PRODUCT ---------- */
-
-
-
-  /* ---------- PRODUCT STORY ---------- */
-
-
   /* ---------- GUIDE DIVIDER ---------- */
 
 .guide-divider{
@@ -495,7 +489,268 @@ footer{
 
 }
 
-  /* ---------- FROM ROSE ---------- */
+
+/* ---------- CONTINUE YOUR ORGANIZATION JOURNEY ---------- */
+
+.coming-guides{
+    max-width:1200px;
+    margin:100px auto;
+    padding:0 20px;
+    text-align:center;
+}
+
+.coming-guides h2{
+    color:#355537;
+    font-size:2rem;
+    margin-bottom:20px;
+}
+
+.coming-guides > p{
+    max-width:700px;
+    margin:0 auto 45px;
+    color:#666;
+    line-height:1.8;
+}
+
+.guide-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.guide-card{
+    background:white;
+    border-radius:18px;
+    padding:30px 20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    border:1px solid #ece8df;
+    transition:.3s;
+}
+
+.guide-card:hover{
+    transform:translateY(-5px);
+}
+
+.guide-card h3{
+    color:#355537;
+    margin-bottom:12px;
+}
+
+.guide-card p{
+    color:#8a8a8a;
+    font-style:italic;
+    line-height:1.6;
+
+}
+
+  .signature{
+
+    margin-top:35px;
+
+    color:#355537;
+
+    font-size:1.15rem;
+
+    line-height:1.8;
+
+    font-style:italic;
+
+}
+
+.signature strong{
+
+    font-size:1.4rem;
+
+}
+
+/* ---------- Guide Sections ---------- */
+
+.guide-section{
+    max-width:900px;
+    margin:50px auto 30px;
+    text-align:center;
+    padding:0 20px;
+}
+
+.guide-section h2{
+    color:#355537;
+    font-size:2rem;
+    margin-bottom:18px;
+}
+
+/* ---------- FAVORITE COLLECTION ---------- */
+
+.favorite-collection{
+    max-width:900px;
+    margin:60px auto 40px;
+    padding:0 20px;
+    text-align:center;
+}
+
+.favorite-collection h2{
+    color:#355537;
+    font-size:2rem;
+    margin-bottom:18px;
+}
+
+.favorite-collection p{
+    color:#666;
+    line-height:1.9;
+    font-size:1.08rem;
+}
+
+/* ---------- PRODUCT COLLECTION TITLE ---------- */
+
+.section-products-title{
+    text-align:center;
+    color:#355537;
+    font-size:2rem;
+    margin:70px auto 15px;
+}
+
+.section-products-intro{
+    max-width:760px;
+    margin:0 auto 40px;
+    text-align:center;
+    color:#666;
+    line-height:1.8;
+    font-size:1.05rem;
+}
+
+/* ---------- PRODUCT NOTE ---------- */
+
+.product-note{
+    background:#f7f5ee;
+    border-radius:12px;
+    padding:14px;
+    margin:18px 20px;
+    text-align:center;
+    color:#4b6043; 
+    font-weight:600;
+    line-height:1.6;
+    font-size:.95rem;
+    border:1px solid #ece8df;
+}
+/* ---------- ROUTINE WRAP UP ---------- */
+
+.routine-wrap-up{
+    max-width:900px;
+    margin:70px auto;
+    padding:0 20px;
+    text-align:center;
+}
+
+.routine-wrap-up h2{
+    color:#355537;
+    font-size:2rem;
+    margin-bottom:20px;
+}
+
+.routine-wrap-up p{
+    color:#666;
+    line-height:1.9;
+    font-size:1.08rem;
+}
+
+  /* ---------- ROSE CHECKLIST ---------- */
+
+.rose-checklist{
+
+background:#f7f5ef;
+
+border-left:6px solid #7a9b6f;
+
+padding:30px;
+
+margin:45px auto;
+
+border-radius:18px;
+
+max-width:850px;
+
+box-shadow:0 8px 18px rgba(0,0,0,.05);
+
+}
+
+.rose-checklist h3{
+
+color:#355537;
+
+margin-bottom:20px;
+
+}
+
+.rose-checklist ul{
+
+list-style:none;
+
+padding:0;
+
+}
+
+.rose-checklist li{
+
+padding:12px 0;
+
+font-size:18px;
+
+border-bottom:1px solid #ece8df;
+
+}
+
+.rose-checklist li:last-child{
+
+border-bottom:none;
+
+}
+
+/* ---------- ROSE'S GENTLE REMINDER ---------- */
+
+.gentle-reminder{
+    max-width:900px;
+    margin:80px auto;
+    text-align:center;
+    padding:0 20px;
+}
+
+.gentle-reminder h2{
+    color:#355537;
+    font-size:2rem;
+    margin-bottom:25px;
+}
+
+.reminder-card{
+    background:#f7f4eb;
+    border-left:6px solid #355537;
+    border-radius:18px;
+    padding:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+.reminder-card p{
+    font-size:1.15rem;
+    line-height:1.9;
+    color:#555;
+    margin-bottom:18px;
+}
+
+.reminder-card p:first-child{
+    font-weight:700;
+    color:#355537;
+    font-size:1.4rem;
+}
+/* ---------- CLOSING ---------- */
+
+.closing{
+    max-width:760px;
+    margin:35px auto;
+    text-align:center;
+    color:#666;
+    line-height:1.9;
+    font-size:1.08rem;
+}
+
+ /* ---------- FROM ROSE ---------- */
 
 .from-rose{
 
@@ -571,172 +826,7 @@ footer{
 
 }
 
-/* ---------- CONTINUE YOUR ORGANIZATION JOURNEY ---------- */
-
-.coming-guides{
-    max-width:1200px;
-    margin:100px auto;
-    padding:0 20px;
-    text-align:center;
-}
-
-.coming-guides h2{
-    color:#355537;
-    font-size:2rem;
-    margin-bottom:20px;
-}
-
-.coming-guides > p{
-    max-width:700px;
-    margin:0 auto 45px;
-    color:#666;
-    line-height:1.8;
-}
-
-.guide-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:25px;
-}
-
-.guide-card{
-    background:white;
-    border-radius:18px;
-    padding:30px 20px;
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
-    border:1px solid #ece8df;
-    transition:.3s;
-}
-
-.guide-card:hover{
-    transform:translateY(-5px);
-}
-
-.guide-card h3{
-    color:#355537;
-    margin-bottom:12px;
-}
-
-.guide-card p{
-    color:#8a8a8a;
-    font-style:italic;
-}
-
-  .signature{
-
-    margin-top:35px;
-
-    color:#355537;
-
-    font-size:1.15rem;
-
-    line-height:1.8;
-
-    font-style:italic;
-
-}
-
-.signature strong{
-
-    font-size:1.4rem;
-
-}
-
-/* ---------- Guide Sections ---------- */
-
-.guide-section{
-    max-width:900px;
-    margin:50px auto 30px;
-    text-align:center;
-    padding:0 20px;
-}
-
-.guide-section h2{
-    color:#355537;
-    font-size:2rem;
-    margin-bottom:18px;
-}
-
-.guide-intro{
-    max-width:760px;
-    margin:0 auto 25px;
-    font-size:1.08rem;
-    line-height:1.8;
-    color:#555;
-}
-
-/* ---------- FAVORITE COLLECTION ---------- */
-
-.favorite-collection{
-    max-width:900px;
-    margin:60px auto 40px;
-    padding:0 20px;
-    text-align:center;
-}
-
-.favorite-collection h2{
-    color:#355537;
-    font-size:2rem;
-    margin-bottom:18px;
-}
-
-.favorite-collection p{
-    color:#666;
-    line-height:1.9;
-    font-size:1.08rem;
-}
-
-/* ---------- PRODUCT COLLECTION TITLE ---------- */
-
-.section-products-title{
-    text-align:center;
-    color:#355537;
-    font-size:2rem;
-    margin:70px auto 15px;
-}
-
-.section-products-intro{
-    max-width:760px;
-    margin:0 auto 40px;
-    text-align:center;
-    color:#666;
-    line-height:1.8;
-    font-size:1.05rem;
-}
-
-/* ---------- PRODUCT NOTE ---------- */
-
-.product-note{
-    background:#f7f5ee;
-    border-radius:12px;
-    padding:14px;
-    margin:18px 20px;
-    text-align:center;
-    color:#4b6043;
-    font-weight:600;
-    line-height:1.6;
-    border:1px solid #ece8df;
-}
-/* ---------- ROUTINE WRAP UP ---------- */
-
-.routine-wrap-up{
-    max-width:900px;
-    margin:70px auto;
-    padding:0 20px;
-    text-align:center;
-}
-
-.routine-wrap-up h2{
-    color:#355537;
-    font-size:2rem;
-    margin-bottom:20px;
-}
-
-.routine-wrap-up p{
-    color:#666;
-    line-height:1.9;
-    font-size:1.08rem;
-}
+    
 /* ---------- FREE PRINTABLE ---------- */
 
 .free-printable{
@@ -798,103 +888,8 @@ footer{
     border-bottom:none;
 }
     
-/* ---------- ROSE'S GENTLE REMINDER ---------- */
 
-.gentle-reminder{
-    max-width:900px;
-    margin:80px auto;
-    text-align:center;
-    padding:0 20px;
-}
-
-.gentle-reminder h2{
-    color:#355537;
-    font-size:2rem;
-    margin-bottom:25px;
-}
-
-.reminder-card{
-    background:#f7f4eb;
-    border-left:6px solid #355537;
-    border-radius:18px;
-    padding:40px;
-    box-shadow:0 10px 30px rgba(0,0,0,.06);
-}
-
-.reminder-card p{
-    font-size:1.15rem;
-    line-height:1.9;
-    color:#555;
-    margin-bottom:18px;
-}
-
-.reminder-card p:first-child{
-    font-weight:700;
-    color:#355537;
-    font-size:1.4rem;
-}
-/* ---------- CLOSING ---------- */
-
-.closing{
-    max-width:760px;
-    margin:35px auto;
-    text-align:center;
-    color:#666;
-    line-height:1.9;
-    font-size:1.08rem;
-}
-    /* ---------- ROSE CHECKLIST ---------- */
-
-.rose-checklist{
-
-background:#f7f5ef;
-
-border-left:6px solid #7a9b6f;
-
-padding:30px;
-
-margin:45px auto;
-
-border-radius:18px;
-
-max-width:850px;
-
-box-shadow:0 8px 18px rgba(0,0,0,.05);
-
-}
-
-.rose-checklist h3{
-
-color:#355537;
-
-margin-bottom:20px;
-
-}
-
-.rose-checklist ul{
-
-list-style:none;
-
-padding:0;
-
-}
-
-.rose-checklist li{
-
-padding:12px 0;
-
-font-size:18px;
-
-border-bottom:1px solid #ece8df;
-
-}
-
-.rose-checklist li:last-child{
-
-border-bottom:none;
-
-}
-    
+  
 </style>
 </head>
 
