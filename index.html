@@ -567,24 +567,18 @@ font-size:1.1rem;
 }
 
 .library-grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-
-gap:30px;
-
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    align-items:start;
 }
-
+    
 .library-card{
     background:white;
     padding:35px;
     border-radius:20px;
     box-shadow:0 10px 25px rgba(0,0,0,.08);
     transition:.3s;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
 }
     .library-card:hover{
 
