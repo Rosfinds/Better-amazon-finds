@@ -631,6 +631,36 @@ font-size:.9rem;
 opacity:.8;
 
 }
+/* ==============================
+   Faith & Family Cards Only
+   ============================== */
+
+.faith-products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+    margin:40px 0;
+}
+
+.faith-card{
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:all .3s ease;
+    display:block;
+}
+
+.faith-card:hover{
+    transform:translateY(-5px);
+}
+
+.faith-card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    display:block;
+}
     
 </style>
 </head>
