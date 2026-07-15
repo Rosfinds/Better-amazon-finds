@@ -163,17 +163,15 @@ body{
     transform:translateY(-5px);
 }
 
-.card img,
-.product-card img{
-    width:100%;
-    height:380px;
-    object-fit:contain;
-    background:white;
-    padding:0;
-    border-radius:12px;
+.card img{
+    width:calc(100% - 40px);
+    height:340px;
+    object-fit:cover;
     display:block;
+    margin:20px auto 0;
+    border-radius:14px;
 }
-   .card-content{
+    .card-content{
     padding:16px 20px;
     display:flex;
     flex-direction:column;
@@ -701,6 +699,15 @@ opacity:.8;
     max-width:760px;
     margin:auto;
 }
+.favorite-label{
+    color:#6b7f57;
+    font-size:.9rem;
+    font-weight:600;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    text-align:center;
+    margin:18px 0 6px;
+}
     
 </style>
 </head>
@@ -954,16 +961,20 @@ These are the kitchen essentials I reach for again and again. Every piece has ea
 
         <div class="card-content">
 
-            <h3>My Favorite Dutch Oven</h3>
+<p class="favorite-label">
+🌿 Rose's Favorite
+</p>
 
+<h3>My Favorite Dutch Oven</h3>
+            
             <p>
             A timeless kitchen essential that's perfect for homemade soups, stews, fresh bread, pasta sauces, chili, and cozy family dinners. Beautiful enough to serve right at the table and built to last for years.
             </p>
 
-            <p class="rose-tip">
-            💚 <strong>Rose's Tip:</strong> If I could recommend one cookware investment for a peaceful, cozy kitchen, this would be it. It goes from stovetop to oven beautifully and makes family dinners feel extra special.
-            </p>
-
+<p class="rose-tip">
+🤍 <strong>Why I Love It:</strong> If I could recommend one cookware investment for a peaceful, cozy kitchen, this would be it. It goes from stovetop to oven beautifully and makes family dinners feel extra special.
+</p>
+            
             <a href="https://www.amazon.com/dp/B00U1OCPWQ?asc_item-id=amzn1.shoppablemedia.v1.collage.d7437457-7289-4e6d-b7cf-0e95b2a75eb8&th=1&linkCode=ll2&tag=rosmeryguerra-20&linkId=64af134b94c2116295376cb33f1fee5a&language=en_US&ref_=as_li_ss_tl"
                class="btn"
                target="_blank">
@@ -982,8 +993,12 @@ These are the kitchen essentials I reach for again and again. Every piece has ea
 
         <div class="card-content">
 
-            <h3>My Favorite Wooden Utensils</h3>
+          <p class="favorite-label">
+🌿 Rose's Favorite
+</p>
 
+<h3>My Favorite Wooden Utensils</h3>
+            
             <p>
             A beautiful set of everyday wooden utensils that protects your cookware while bringing warmth and timeless charm to your kitchen. These are the tools you'll reach for every single day.
             </p>
