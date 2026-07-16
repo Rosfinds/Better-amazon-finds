@@ -744,25 +744,109 @@ opacity:.8;
     text-transform:uppercase;
     margin-bottom:8px;
 }
+/* ===== Homepage Hero ===== */
+
+.hero-home{
+    background:#faf8f4;
+}
+
+.hero-image{
+    position:relative;
+    max-width:1400px;
+    margin:0 auto;
+}
+
+.hero-image img{
+    width:100%;
+    display:block;
+    border-radius:24px;
+}
+
+.hero-text{
+    position:absolute;
+    left:8%;
+    top:50%;
+    transform:translateY(-50%);
+    max-width:480px;
+    color:white;
+}
+
+.hero-text h2{
+    font-size:3.6rem;
+    line-height:1.1;
+    margin-bottom:20px;
+    font-family:Georgia, serif;
+}
+
+.hero-text p{
+    font-size:1.2rem;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.hero-button{
+    display:inline-block;
+    background:#355537;
+    color:white;
+    padding:16px 34px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.hero-button:hover{
+    background:#b68b47;
+}
     
 </style>
 </head>
 
 <body>
+<header class="hero-home">
 
-<header class="hero">
+    <div class="site-header">
 
-    <img src="website-banner.png"
-         alt="Healthy Living & Family Finds"
-         class="banner">
+        <div class="logo">
+
+            <h1>Healthy Living</h1>
+            <span>& Family Finds</span>
+
+        </div>
+
+        <nav class="nav-menu">
+
+            <a href="index.html">Home</a>
+            <a href="#collections">Collections</a>
+            <a href="about.html">About</a>
+
+        </nav>
+
+    </div>
+
+    <div class="hero-image">
+
+        <img src="homepage-hero.png"
+             alt="Healthy Living & Family Finds">
+
+        <div class="hero-text">
+
+            <h2>Create a Home You Love</h2>
+
+            <p>
+                Thoughtfully curated essentials to help you build a home filled with faith, warmth, and peace.
+            </p>
+
+            <a href="#collections" class="hero-button">
+                Explore Collections
+            </a>
+
+        </div>
+
+    </div>
 
 </header>
-
-<div class="disclosure">
-    As an Amazon Associate I earn from qualifying purchases.
-</div>
-
-<section class="welcome">
+    <section class="welcome">
 
 <h2>Welcome, Friend! 🌿</h2>
 
