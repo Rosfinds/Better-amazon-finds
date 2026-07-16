@@ -1,1 +1,1783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="p:domain_verify" content="54ffffdf52f73fa395a97bfdca8389da"/>
+<title>My Favorite Amazon Finds</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f7f7f7;
+    color:#333;
+}
+
+.hero{
+    background:#ffffff;
+    text-align:center;
+    padding:12px 20px;
+}
+   .banner{
+    width:100%;
+    max-width:1200px;
+    height:400px;
+    object-fit:cover;
+    object-position:center;
+    display:block;
+    margin:25px auto;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
+}
+    .navbar{
+    background:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:12px;
+    padding:18px 20px;
+    box-shadow:0 3px 12px rgba(0,0,0,.06);
+    margin-bottom:20px;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:#355537;
+    font-weight:600;
+    padding:10px 16px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.navbar a:hover{
+    background:#355537;
+    color:white;
+}
+    
+.disclosure{
+    background:#fff8e7;
+    padding:15px;
+    text-align:center;
+    font-size:.9rem;
+}
+
+/* ADD THIS HERE */
+
+.welcome{
+    background:white;
+    max-width:900px;
+    margin:40px auto;
+    padding:35px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.welcome h2{
+    color:#4b6043;
+    margin-bottom:15px;
+}
+
+.welcome p{
+    color:#555;
+    line-height:1.8;
+}
+
+
+/* Kitchen Subcategory Titles */
+
+.subcategory-title{
+    color:#355537;
+    font-size:1.6rem;
+    margin:35px 0 10px;
+    font-weight:700;
+}
+
+.subcategory-description{
+    color:#6b6b6b;
+    font-size:1rem;
+    line-height:1.7;
+    margin-bottom:30px;
+    max-width:700px;
+}    
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:30px 20px;
+}
+
+.category-title{
+    margin:60px 0 20px;
+    font-size:2rem;
+    text-align:center;
+    color:#4b6043;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(380px, 1fr));
+    gap:35px;
+    margin-bottom:60px;
+    align-items:start;
+}
+    
+@media (max-width: 900px){
+    .products{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .products{
+        grid-template-columns:1fr;
+    }
+}
+    
+.card,
+.product-card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:all .3s ease;
+    display:flex;
+    flex-direction:column;
+}
+.product-card{
+    max-width:900px;
+    margin:35px auto;
+}
+    .card:hover,
+.product-card:hover{
+    transform:translateY(-5px);
+}
+    
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:calc(100% - 40px);
+    height:340px;
+    object-fit:cover;
+    display:block;
+    margin:20px auto 0;
+    border-radius:14px;
+}
+    .card-content{
+    padding:24px;
+    display:flex;
+    flex-direction:column;
+    flex-grow:1;
+}
+    .card-content .btn{
+    margin-top:auto;
+}
+    
+.card h3{
+    margin-top:4px;
+    margin-bottom:14px;
+    text-align:center;
+    color:#2f4732;
+    font-size:1.45rem;
+    font-weight:600;
+    line-height:1.3;
+}
+    
+.card p{
+    color:#666;
+    margin-bottom:18px;
+    line-height:1.8;
+    text-align:center;
+    font-size:1rem;
+}
+    .rose-tip{
+    background:#f7f5ee;
+    border-left:4px solid #4b6043;
+    padding:14px;
+    margin:18px 20px;
+    border-radius:10px;
+    color:#555;
+    font-size:.95rem;
+    line-height:1.6;
+    font-style:italic;
+}
+    
+.btn{
+    display:block;
+    width:100%;
+    text-align:center;
+    background:#d68a3c;
+    color:white;
+    text-decoration:none;
+    padding:14px;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+}
+    
+.btn:hover{
+    background:#b8742d;
+    transform:translateY(-2px);
+}
+
+.about-btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:14px 28px;
+    background:#355537;
+    color:white;
+    text-decoration:none;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.about-btn:hover{
+    background:#2b452d;
+    transform:translateY(-2px);
+}
+.category-banner{
+    width:100%;
+    max-width:1200px;
+    height:400px;
+    object-fit:cover;
+    object-position:center;
+    display:block;
+    margin:25px auto;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
+}
+    .category-description{
+    color:#666;
+    font-size:1.05rem;
+    line-height:1.7;
+    margin-top:-5px;
+    margin-bottom:25px;
+    max-width:850px;
+}
+
+.rose-picks{
+    background:#ffffff;
+    margin:70px auto;
+    padding:55px;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    max-width:1200px;
+}
+
+.rose-picks h2{
+    text-align:center;
+    color:#355537;
+    margin-bottom:15px;
+    font-size:2rem;
+}
+
+.rose-intro{
+    text-align:center;
+    max-width:750px;
+    margin:0 auto 45px;
+    color:#666;
+    line-height:1.8;
+    font-size:1.05rem;
+}
+
+.rose-grid{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+    
+.rose-card{
+    width:420px;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    border:1px solid #ece8df;
+    display:flex;
+    flex-direction:column;
+    transition:all .3s ease;
+}
+    
+.rose-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 14px 35px rgba(0,0,0,.12);
+}
+    
+.rose-card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    display:block;
+    border-bottom:1px solid #ece8df;
+}
+    
+.rose-card h3{
+    text-align:center;
+    color:#355537;
+    margin:24px 20px 12px;
+    font-size:1.3rem;
+}
+
+.rose-card p{
+    padding:0 25px;
+    text-align:center;
+    line-height:1.7;
+    color:#666;
+    flex-grow:1;
+}
+    
+.rose-highlight{
+    color:#4b6043;
+    font-weight:700;
+    text-align:center;
+    font-size:1rem;
+    margin:18px 20px 8px;
+} 
+
+.rose-badge{
+    background:#4b6043;
+    color:white;
+    text-align:center;
+    padding:10px;
+    font-size:.9rem;
+    font-weight:bold;
+    letter-spacing:.5px;
+}
+    
+.rose-card .btn{
+    margin:20px auto 25px;
+    width:80%;
+    text-align:center;
+}
+    
+footer{
+    text-align:center;
+    padding:40px 20px;
+    color:#777;
+}
+    
+.social{
+    margin-top:15px;
+}
+
+.social a{
+    text-decoration:none;
+    margin:0 10px;
+    color:#333;
+    font-weight:bold;
+}
+.quick-links{
+    max-width:1100px;
+    margin:60px auto;
+    text-align:center;
+    padding:0 20px;
+}
+
+.quick-grid{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:18px;
+    margin-top:30px;
+}
+    
+.quick-links a{
+    text-decoration:none;
+    background:white;
+    color:#355537;
+    padding:16px 24px;
+    border-radius:14px;
+    font-weight:600;
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+    transition:.3s;
+    border:1px solid #ece8df;
+}
+    
+.quick-links a:hover{
+    background:#355537;
+    color:white;
+    transform:translateY(-4px);
+    box-shadow:0 10px 22px rgba(0,0,0,.12);
+}
+
+/* ---------- START HERE SECTION ---------- */
+
+.start-here{
+    max-width:1200px;
+    margin:80px auto;
+    padding:0 20px;
+}
+
+.start-card{
+    background:white;
+    border-radius:24px;
+    padding:55px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    text-align:center;
+}
+
+.start-card h2{
+    color:#355537;
+    font-size:2.2rem;
+    margin-bottom:20px;
+}
+
+.start-card p{
+    max-width:760px;
+    margin:0 auto;
+    color:#666;
+    line-height:1.8;
+    font-size:1.05rem;
+}
+    
+.start-banner{
+    width:100%;
+    max-width:1200px;
+    height:400px;
+    object-fit:cover;
+    object-position:center;
+    display:block;
+    margin:40px auto;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
+}
+    .guide-btn{
+    display:inline-block;
+    background:#355537;
+    color:white;
+    text-decoration:none;
+    padding:16px 34px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.guide-btn:hover{
+    background:#2d482f;
+    transform:translateY(-3px);
+}
+
+/* ---------- MEET ROSE ---------- */
+
+.meet-rose{
+
+    max-width:1200px;
+
+    margin:90px auto;
+
+    padding:0 20px;
+
+}
+
+.meet-layout{
+    display:grid;
+    grid-template-columns:260px 1fr;
+    gap:35px;
+    align-items:center;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+    
+    .meet-photo{
+
+    text-align:center;
+
+}
+
+.meet-photo img{
+    width:100%;
+    max-width:190px;
+}
+    
+.meet-text h2{
+    font-size:1.7rem;
+    margin-bottom:18px;
+}
+    
+.meet-text p{
+    line-height:1.7;
+    margin-bottom:14px;
+    font-size:1rem;
+}
+    
+@media(max-width:900px){
+
+.meet-layout{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.meet-photo{
+
+margin-bottom:20px;
+
+}
+
+}
+
+/* ---------- FREE LIBRARY ---------- */
+
+    
+/* ---------- FOOTER ---------- */
+
+footer{
+
+background:#355537;
+
+color:white;
+
+margin-top:100px;
+
+padding:70px 25px;
+
+}
+
+.footer-content{
+
+max-width:1200px;
+
+margin:auto;
+
+text-align:center;
+
+}
+
+.footer-content h2{
+
+color:white;
+
+margin-bottom:20px;
+
+}
+
+.footer-mission{
+
+max-width:700px;
+
+margin:0 auto 50px;
+
+line-height:1.8;
+
+color:#f4f4f4;
+
+}
+
+.footer-links{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:40px;
+
+margin-bottom:50px;
+
+text-align:left;
+
+}
+
+.footer-links h3{
+
+margin-bottom:15px;
+
+color:#fff;
+
+}
+
+.footer-links a{
+
+display:block;
+
+color:#f4f4f4;
+
+text-decoration:none;
+
+margin:10px 0;
+
+transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+padding-left:8px;
+
+}
+
+footer hr{
+
+border:none;
+
+height:1px;
+
+background:rgba(255,255,255,.2);
+
+margin:40px 0;
+
+}
+
+.footer-disclosure{
+
+font-size:.95rem;
+
+line-height:1.7;
+
+color:#f0f0f0;
+
+margin-bottom:25px;
+
+}
+
+.copyright{
+
+font-size:.9rem;
+
+opacity:.8;
+
+}
+/* ==========================================
+   FAITH & FAMILY ONLY
+   ========================================== */
+
+.faith-products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+    gap:35px;
+    margin:40px auto 70px;
+    max-width:1100px;
+}
+
+.faith-card{
+    display:block;
+    background:#ffffff;
+    border-radius:22px;
+    overflow:hidden;
+    text-decoration:none;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:transform .3s ease, box-shadow .3s ease;
+}
+
+.faith-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 18px 35px rgba(0,0,0,.12);
+}
+
+.faith-card img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+.featured-intro{
+    max-width:850px;
+    margin:35px auto 30px;
+    text-align:center;
+}
+
+.featured-intro h2{
+    color:#2f4732;
+    font-size:2rem;
+    margin-bottom:15px;
+}
+
+.featured-intro p{
+    color:#666;
+    font-size:1.1rem;
+    line-height:1.8;
+    max-width:760px;
+    margin:auto;
+}
+.favorite-label{
+    color:#6b7f57;
+    font-size:.9rem;
+    font-weight:600;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    text-align:center;
+    margin:18px 0 6px;
+}
+    
+.favorite-label{
+    text-align:center;
+    color:#6c7b5b;
+    font-size:.82rem;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:8px;
+}
+    
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+
+    <img src="website-banner.png"
+         alt="Healthy Living & Family Finds"
+         class="banner">
+
+</header>
+
+<div class="disclosure">
+    As an Amazon Associate I earn from qualifying purchases.
+</div>
+
+<section class="welcome">
+
+<h2>Welcome, Friend! 🌿</h2>
+
+<p>
+Thank you for stopping by! I'm so happy you're here.
+</p>
+
+<p>
+
+Here you'll find step-by-step home organization guides, carefully selected Amazon finds, free printable resources, and practical ideas to help you create a peaceful home—one small step at a time.
+
+</p>
+
+<p>
+
+As a Christian wife and stay-at-home mom, I've learned that caring for our homes isn't about perfection. It's about creating spaces where our families feel loved, welcomed, and at peace.
+
+</p>
+
+<p>
+
+Whether you're organizing your pantry, preparing for a new school year, simplifying daily routines, or searching for products that truly make life easier, I hope you'll find encouragement and inspiration here.
+
+</p>
+
+<p>
+
+<strong>My prayer is that every guide, every recommendation, and every resource helps you build a home that reflects God's love, order, and peace.</strong>
+
+</p>
+        
+</section>
+    
+    <section class="quick-links">
+
+    <h2>🌿 Explore the Website</h2>
+
+    <p>
+        Choose a category below to discover practical guides, trusted products, free printables, and inspiration for creating a peaceful home.
+    </p>
+
+    <div class="quick-grid">
+
+        <a href="home-organization-guide.html">🥫 Pantry Guide</a>
+        <a href="school-supplies-guide.html">🎒 Back-to-School Guide</a>
+        <a href="summer-fun-guide.html"> ☀️ Summer Fun Guide </a>
+        <a href="#home">🏠 Home Organization</a>
+        <a href="#kitchen">🍳 Kitchen Favorites</a>
+        <a href="#school">🎒 School Products</a>
+        <a href="#healthy">🌿 Healthy Living</a>
+        <a href="#family">👨‍👩‍👧‍👦 Family Favorites</a>
+        <a href="#faith">✝️ Faith & Family</a>
+
+    </div>
+
+</section
+<section class="meet-rose">
+
+<div class="meet-layout">
+
+<div class="meet-photo">
+
+<img src="rose-logo.png"
+alt="Healthy Living & Family Finds">
+
+</div>
+
+<div class="meet-text">
+
+<h2>🌿 Meet Rose</h2>
+
+<p>
+Healthy Living & Family Finds was born from a simple dream—to help women create peaceful homes through faith, family, and simple living.
+</p>
+    
+ <p>
+After becoming a wife and stay-at-home mom, I realized that creating a peaceful home doesn't happen by accident. It grows through intentional habits, thoughtful organization, healthy routines, and choosing products that truly make everyday life easier.
+</p>
+
+<p>
+Here you'll find practical home organization guides, trusted product recommendations, healthy living inspiration, and faith-filled encouragement—all created to help you build a home where your family can thrive.
+</p>
+    
+<p>
+Whether you're organizing your pantry, preparing for a new school year, or simply looking for inspiration, I hope you'll find ideas here that make your home feel a little more peaceful—one small step at a time.
+</p>
+    
+<a href="about.html"
+class="about-btn">
+
+🌿 Read My Story
+    
+</a>
+
+</div>
+
+</div>
+
+</section>
+    
+    <div class="container">
+    <img src="website-kitchen-banner.png"
+     alt="Kitchen Favorites"
+     class="category-banner">
+
+<h2 class="category-title">
+🏡 Cozy Kitchen Essentials
+</h2>
+
+<p class="section-intro">
+A thoughtfully curated collection of timeless kitchen pieces that bring warmth, beauty, and simplicity to everyday cooking. These are the favorites I genuinely love and would happily welcome into my own home.
+</p>    
+
+    
+    <div class="products">
+
+        <div class="card" id="vegetable-chopper">
+            <img src="vegetable-chopper.png" alt="Vegetable Chopper">           
+            <div class="card-content">
+                <h3>Vegetable Chopper</h3>
+                <p>Makes meal prep faster and easier.</p>
+                <a href="https://www.amazon.com/Vegetable-Chopper-Spiralizer-Slicer-Choppers/dp/B0764HS4SL?linkCode=ll2&tag=rosmeryguerra-20"
+                   class="btn"
+                   target="_blank">
+                    View on Amazon
+                </a>
+            </div>
+        </div>
+
+        <div class="card" id="oil-dispenser">
+            <img src="oil-dispenser.png" alt="Olive Oil Dispenser">         
+            <div class="card-content">
+                <h3>Olive Oil Dispenser Bottle</h3>
+                <p>Easy-to-use dispenser for cooking oils and dressings.</p>
+                <a href="https://www.amazon.com/TrendPlain-16oz-Dispenser-Bottle-Kitchen/dp/B0CJF94M8J?linkCode=ll2&tag=rosmeryguerra-20"
+                   class="btn"
+                   target="_blank">
+                    View on Amazon
+                </a>
+            </div>
+        </div>
+
+        <div class="card" id="can-opener">
+            <img src="can-opener.png" alt="Kitchen Mama Electric Can Opener">       
+            <div class="card-content">
+                <h3>Kitchen Mama Electric Can Opener</h3>
+                <p>Hands-free automatic can opener.</p>
+                <a href="https://www.amazon.com/Kitchen-Mama-Automatic-Electric-Opener/dp/B07FVQLBL3?linkCode=ll2&tag=rosmeryguerra-20"
+                   class="btn"
+                   target="_blank">
+                    View on Amazon
+                      </a>
+
+    </div>
+
+</div>
+
+<div class="card" id="glass-food-storage-containers">
+    <img src="glass-food-storage-containers.png"
+         alt="Rubbermaid Brilliance Glass Food Storage Containers">
+
+    <div class="card-content">
+
+        <h3>Glass Food Storage Containers</h3>
+
+        <p>
+        Keep leftovers fresh and meal prep organized with the Rubbermaid Brilliance Glass Food Storage Containers Set of 9.
+        </p>
+
+        <a href="https://www.amazon.com/Rubbermaid-Brilliance-Storage-Containers-Pieces/dp/B08BR9HBZ3?content-id=amzn1.sym.20370b4c-979a-4a65-bc84-8b168f3df5c5%3Aamzn1.sym.20370b4c-979a-4a65-bc84-8b168f3df5c5&crid=29M1R3NY5L9ZU&cv_ct_cx=glass%2Bfood%2Bstorage%2Bcontainers%2Bwith%2Blids&keywords=glass%2Bfood%2Bstorage%2Bcontainers%2Bwith%2Blids&pd_rd_i=B08BR9HBZ3&pd_rd_r=efc4c79c-d843-4fb9-9945-4cf756189d3b&pd_rd_w=xt9m8&pd_rd_wg=wll6W&pf_rd_p=20370b4c-979a-4a65-bc84-8b168f3df5c5&pf_rd_r=9Y4B61ZAGRAWSZBTQDB1&qid=1782500088&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=glass%2Bfood%2Bstorage%2B%2Caps%2C183&sr=1-1-543a432c-671c-4a3a-a15e-c8d9b2229043-spons&ufe=app_do%3Aamzn1.fos.9fe8cbfa-bf43-43d1-a707-3f4e65a4b666&aref=TvYxHYkHhf&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1&linkCode=ll2&tag=rosmeryguerra-20&linkId=291457503aa569d888d69e234952a88b&language=en_US&ref_=as_li_ss_tl"
+           class="btn"
+           target="_blank">
+            View on Amazon
+        </a>
+
+    </div>
+
+  </div>
+<div class="card" id="this-week-meal-planner">
+
+    <img src="Weekly-Meal-Planner-Notepad.png"
+         alt="Weekly Meal Planner Notepad">
+
+    <div class="card-content">
+
+        <h3>Weekly Meal Planner Notepad</h3>
+
+        <p>
+        Plan your weekly meals, organize your grocery shopping, and simplify family dinners with this colorful meal planner.
+        </p>
+
+        <a href="https://www.amazon.com/Decorably-Undated-8-5x11in-Spring-Bound-Magnetic/dp/B09QS8F8TN?crid=2M072755J6VDB&dib=eyJ2IjoiMSJ9.5gh0zGOXRXu7VJGwb6FghkXtAkSvsVYZS73l4AXubaaUJnQCDeUIqHORSlTorXLTIIHi2ZzQF5AEHuG00IXTm1ofbAmHu6hwmtRaqJOhrFBni55NSt5ZKxST1FCDN7G4IRIwQn062StlDIn2UbwAhZmMKDqIpgfW_BYRaOXZSKVlEuuG4SP0CT_4phfwWKayx_E0fCDBYoIRc6A6XpkEVWVtlvwKA17uGb1tn4H6VtBuXu2nK6cLaKxFYCHwTuK-ht4ZSmXzm98EAGwaB9vxxE44H6PFayZVESe-sxPgzic.R-OxqF9QsKAn0Tv2vHfhWhfkcsiZEBCn748Z8o1DzTk&dib_tag=se&keywords=this%2Bweek%2Bmeal%2Bplanner&qid=1782517653&sprefix=this%2Bweek%2Bm%2Caps%2C232&sr=8-6&th=1&linkCode=ll2&tag=rosmeryguerra-20&linkId=da8ecd8da4db4056b8f90f5a2f9d2bcd&language=en_US&ref_=as_li_ss_tl"
+           class="btn"
+           target="_blank">
+            View on Amazon
+        </a>
+
+    </div>
+
+</div>
+    
+</div>
+<!-- Future Kitchen Collections -->
+
+<hr class="section-divider">
+
+<img src="cozy-kitchen-banner.png"
+     alt="Cozy Kitchen Essentials"
+     class="category-banner">
+<section class="featured-intro">
+
+<h2>🌿 Featured Favorites</h2>
+
+<p>
+Carefully chosen kitchen favorites that bring beauty, warmth, and simplicity to everyday cooking.
+</p>
+
+</section>
+    <div class="products">
+
+    <!-- Dutch Oven -->
+    <div class="card">
+
+        <img src="lodge-dutch-oven.png"
+             alt="Lodge 6 Quart Enameled Dutch Oven">
+
+        <div class="card-content">
+
+
+<p class="favorite-label">🌿 Rose's Favorite</p>
+            
+            <h3> Lodge Dutch Oven</h3>
+            
+            <p>
+            A timeless kitchen essential that's perfect for homemade soups, stews, fresh bread, pasta sauces, chili, and cozy family dinners. Beautiful enough to serve right at the table and built to last for years.
+            </p>
+
+<p class="rose-tip">
+🤍 <strong>Why I Love It:</strong> If I could recommend one cookware investment for a peaceful, cozy kitchen, this would be it. It goes from stovetop to oven beautifully and makes family dinners feel extra special.
+</p>
+            
+            <a href="https://www.amazon.com/dp/B00U1OCPWQ?asc_item-id=amzn1.shoppablemedia.v1.collage.d7437457-7289-4e6d-b7cf-0e95b2a75eb8&th=1&linkCode=ll2&tag=rosmeryguerra-20&linkId=64af134b94c2116295376cb33f1fee5a&language=en_US&ref_=as_li_ss_tl"
+               class="btn"
+               target="_blank">
+               View on Amazon
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- Wooden Utensils -->
+    <div class="card">
+
+        <img src="wooden-utensils-card.png"
+             alt="Natural Wooden Cooking Utensil Set">
+
+        <div class="card-content">
+
+<p class="favorite-label">🌿 Rose's Favorite</p>
+            
+            <h3>Acacia Wooden Utensil Set</h3>
+            
+            <p>
+            A beautiful set of everyday wooden utensils that protects your cookware while bringing warmth and timeless charm to your kitchen. These are the tools you'll reach for every single day.
+            </p>
+
+            <p class="rose-tip">
+            💚 <strong>Rose's Tip:</strong> I love displaying my wooden utensils in a ceramic crock beside the stove. They're always within reach, protect my cookware beautifully, and make the whole kitchen feel warm and welcoming.
+            </p>
+
+            <a href="https://www.amazon.com/dp/B0BXDKHHGH?asc_item-id=amzn1.shoppablemedia.v1.collage.d7437457-7289-4e6d-b7cf-0e95b2a75eb8&th=1&linkCode=ll2&tag=rosmeryguerra-20&linkId=a9e5db5beddc0b7c4bc34fe65da16860&language=en_US&ref_=as_li_ss_tl"
+               class="btn"
+               target="_blank">
+               View on Amazon
+            </a>
+
+        </div>
+
+    </div>
+   
+<!-- Cutting Boards -->
+<div class="card">
+
+    <img src="cutting-board-card.png"
+         alt="Royal Craft Wood Cutting Boards">
+
+    <div class="card-content">
+
+        <p class="favorite-label">🌿 Rose's Favorite</p>
+
+        <h3>Royal Craft Wood Cutting Boards</h3>
+
+        <p>
+        A beautiful set of solid acacia wood cutting boards that doubles as elegant serving boards. They're durable, timeless, and bring natural warmth to every meal.
+        </p>
+
+        <p class="rose-tip">
+        🤍 <strong>Why I Love It:</strong> I love leaving these on my countertop because they're both practical and beautiful. They make everyday meal prep feel a little more special while adding cozy warmth to the kitchen.
+        </p>
+
+        <a href="https://www.amazon.com/dp/B0FVYKHZXQ?asc_item-id=amzn1.shoppablemedia.v1.collage.d7437457-7289-4e6d-b7cf-0e95b2a75eb8&th=1&linkCode=ll2&tag=rosmeryguerra-20&linkId=81961ed3ef48fde0bb8b60de2f7cd6cd&language=en_US&ref_=as_li_ss_tl"
+           class="btn"
+           target="_blank">
+            View on Amazon
+        </a>
+
+    </div>
+
+</div>
+
+<!-- Olive Oil Bottle -->
+<div class="card">
+
+    <img src="olive-oil-card.png"
+         alt="Vintage Glass Olive Oil Bottle">
+
+    <div class="card-content">
+
+        <p class="favorite-label">🌿 Rose's Favorite</p>
+
+        <h3>Vintage Glass Olive Oil Bottle</h3>
+
+        <p>
+        An elegant glass bottle that keeps olive oil close at hand while adding timeless European charm to your countertop. Beautiful enough to leave on display every day.
+        </p>
+
+        <p class="rose-tip">
+        🤍 <strong>Why I Love It:</strong> I keep this bottle beside my cutting boards and wooden utensils. It makes everyday cooking feel intentional while keeping my favorite olive oil within easy reach.
+        </p>
+
+        <a href="https://www.amazon.com/dp/B0GXYCXLWB?asc_item-id=amzn1.shoppablemedia.v1.collage.d7437457-7289-4e6d-b7cf-0e95b2a75eb8&th=1&linkCode=ll2&tag=rosmeryguerra-20&linkId=73762df090c46e4bba9d8ac00c02b38c&language=en_US&ref_=as_li_ss_tl"
+           class="btn"
+           target="_blank">
+            View on Amazon
+        </a>
+
+    </div>
+
+</div>
+
+<!-- Salt & Pepper Mills -->
+<div class="card">
+
+    <img src="salt-pepper-mills-card.png"
+         alt="Acacia Salt and Pepper Mill Set">
+
+    <div class="card-content">
+
+        <p class="favorite-label">🌿 Rose's Favorite</p>
+
+        <h3>Acacia Salt & Pepper Mills</h3>
+
+        <p>
+        Beautiful wooden salt and pepper mills that bring warmth and timeless style to your kitchen. Functional enough for everyday cooking and elegant enough to display on the countertop.
+        </p>
+
+        <p class="rose-tip">
+        🤍 <strong>Why I Love It:</strong> I love pairing these with my olive oil bottle because they make everyday cooking feel organized, cozy, and welcoming. They're one of those little details that make a kitchen feel complete.
+        </p>
+
+        <a href="https://www.amazon.com/dp/B0FGHVLZ6V?asc_item-id=amzn1.shoppablemedia.v1.collage.d7437457-7289-4e6d-b7cf-0e95b2a75eb8&th=1&linkCode=ll2&tag=rosmeryguerra-20&linkId=7a1eabdf6408d6b9311a304164609597&language=en_US&ref_=as_li_ss_tl"
+           class="btn"
+           target="_blank">
+            View on Amazon
+        </a>
+
+    </div>
+
+</div>
+<!-- Mixing Bowls -->
+<div class="card">
+
+    <img src="mixing-bowls-card.png"
+         alt="Ceramic Mixing Bowl Set">
+
+    <div class="card-content">
+
+        <p class="favorite-label">🌿 Rose's Favorite</p>
+
+        <h3>Elegant Ceramic Mixing Bowl Set</h3>
+
+        <p>
+        A beautiful nesting bowl set that's perfect for baking, serving, and everyday meal prep. Their timeless cream finish makes them just as lovely on the table as they are in the kitchen.
+        </p>
+
+        <p class="rose-tip">
+        🤍 <strong>Why I Love It:</strong> I love keeping these bowls within easy reach because they're practical for everyday cooking and beautiful enough to bring straight to the table. They're one of those pieces that make baking feel even more enjoyable.
+        </p>
+
+        <a href="https://www.amazon.com/dp/B0DG1MVQL6?asc_item-id=amzn1.shoppablemedia.v1.collage.d7437457-7289-4e6d-b7cf-0e95b2a75eb8&th=1&linkCode=ll2&tag=rosmeryguerra-20&linkId=bc0aed3c0d71105ecc19ef608b0494df&language=en_US&ref_=as_li_ss_tl"
+           class="btn"
+           target="_blank">
+            View on Amazon
+        </a>
+
+    </div>
+
+</div>
+<!-- Kitchen Towels -->
+<div class="card">
+
+    <img src="kitchen-towels-card.png"
+         alt="Neutral Kitchen Towels">
+
+    <div class="card-content">
+
+        <p class="favorite-label">🌿 Rose's Favorite</p>
+
+        <h3>Soft Neutral Kitchen Towels</h3>
+
+        <p>
+        Beautiful everyday kitchen towels that are soft, absorbent, and made to handle everything from drying dishes to lining fresh bread baskets. Their timeless neutral colors blend effortlessly into any cozy kitchen.
+        </p>
+
+        <p class="rose-tip">
+        🤍 <strong>Why I Love It:</strong> Fresh kitchen towels instantly make my kitchen feel clean and welcoming. I always keep a few folded on the counter because they're both practical and beautiful.
+        </p>
+
+        <a href="https://www.amazon.com/dp/B09SL149TM?asc_item-id=amzn1.shoppablemedia.v1.collage.d7437457-7289-4e6d-b7cf-0e95b2a75eb8&th=1&linkCode=ll2&tag=rosmeryguerra-20&linkId=01ffe85e90bf0e7a1a1f846f15c8e8ca&language=en_US&ref_=as_li_ss_tl"
+           class="btn"
+           target="_blank">
+            View on Amazon
+        </a>
+
+    </div>
+
+</div>
+<!-- Marble Condiment Jars -->
+<div class="card">
+
+    <img src="marble-condiment-jars-card.png"
+         alt="Marble Condiment Jars">
+
+    <div class="card-content">
+
+        <p class="favorite-label">🌿 Rose's Favorite</p>
+
+        <h3>Elegant Marble Condiment Jars</h3>
+
+        <p>
+        A beautiful way to keep everyday seasonings within easy reach while adding a timeless, elegant touch to your countertop. Perfect for salt, spices, or favorite seasonings.
+        </p>
+
+        <p class="rose-tip">
+        🤍 <strong>Why I Love It:</strong> I love how these little jars keep the kitchen feeling organized without sacrificing beauty. They're one of those small details that make everyday cooking feel extra special.
+        </p>
+
+        <a href="https://www.amazon.com/dp/B09PLCKXSW?asc_item-id=amzn1.shoppablemedia.v1.collage.d7437457-7289-4e6d-b7cf-0e95b2a75eb8&th=1&linkCode=ll2&tag=rosmeryguerra-20&linkId=f55d2e8ea4b53be4354ae8fcee784c30&language=en_US&ref_=as_li_ss_tl"
+           class="btn"
+           target="_blank">
+            View on Amazon
+        </a>
+
+    </div>
+
+</div>
+<!-- Ceramic Mug Set -->
+<div class="card">
+
+    <img src="ceramic-mugs-card.png"
+         alt="Neutral Ceramic Mug Set">
+
+    <div class="card-content">
+
+        <p class="favorite-label">🌿 Rose's Favorite</p>
+
+        <h3>Neutral Ceramic Mug Set</h3>
+
+        <p>
+        Simple, timeless mugs that make every cup of coffee, tea, or hot chocolate feel a little more special. Their warm neutral colors fit beautifully into any cozy kitchen.
+        </p>
+
+        <p class="rose-tip">
+        🤍 <strong>Why I Love It:</strong> I believe little everyday moments matter. These are the mugs I reach for on slow mornings with coffee, quiet devotion time, or cozy evenings with tea.
+        </p>
+
+        <a href="https://www.amazon.com/dp/B0FNY3RL6B?asc_item-id=amzn1.shoppablemedia.v1.collage.d7437457-7289-4e6d-b7cf-0e95b2a75eb8&th=1&linkCode=ll2&tag=rosmeryguerra-20&linkId=8fff34150e109c37e442729be5f36de2&language=en_US&ref_=as_li_ss_tl"
+           class="btn"
+           target="_blank">
+            View on Amazon
+        </a>
+
+    </div>
+
+</div>
+<!-- Bamboo Bread Box -->
+<div class="card">
+
+    <img src="bread-box-card.png"
+         alt="Bamboo Bread Box">
+
+    <div class="card-content">
+
+        <p class="favorite-label">🌿 Rose's Favorite</p>
+
+        <h3>Modern Bamboo Bread Box</h3>
+
+        <p>
+        Keep fresh bread, bagels, pastries, and homemade treats neatly stored while adding warmth and charm to your countertop. A beautiful blend of function and timeless design.
+        </p>
+
+        <p class="rose-tip">
+        🤍 <strong>Why I Love It:</strong> I love keeping fresh bread tucked away instead of leaving plastic bags on the counter. It keeps the kitchen looking peaceful and organized while adding a beautiful natural touch.
+        </p>
+
+        <a href="https://www.amazon.com/dp/B0DS55KXM4?asc_item-id=amzn1.shoppablemedia.v1.collage.d7437457-7289-4e6d-b7cf-0e95b2a75eb8&th=1&linkCode=ll2&tag=rosmeryguerra-20&linkId=794ded1e20e2a160d96ceba5861c1b74&language=en_US&ref_=as_li_ss_tl"
+           class="btn"
+           target="_blank">
+            View on Amazon
+        </a>
+
+    </div>
+
+</div>
+<!-- Wooden Recipe Stand -->
+<div class="card">
+
+    <img src="recipe-stand-card.png"
+         alt="Wooden Recipe Stand">
+
+    <div class="card-content">
+
+        <p class="favorite-label">🌿 Rose's Favorite</p>
+
+        <h3>Wooden Recipe Stand</h3>
+
+        <p>
+        Keep your favorite recipes open and easy to follow while cooking. This beautiful wooden stand adds warmth to your kitchen and turns every recipe into part of the décor.
+        </p>
+
+        <p class="rose-tip">
+        🤍 <strong>Why I Love It:</strong> I love having my recipe open without worrying about messy pages. It keeps everything at eye level and makes cooking feel peaceful and organized.
+        </p>
+
+        <a href="https://www.amazon.com/Cutting-Recipe-Cookbook-Tablet-Kickstand/dp/B071GD85K1?crid=38LSPVMX8MNWV&dib=eyJ2IjoiMSJ9.2e-0o-7UHZKu9i5fvUSidSKoAzA4lIriP20JTo7lAXc0U3Uu4A_Ke1Ko87mwttzYFFn2KDXMq_K3ekRfp7a33mL2X2ECAagqQymGZYTq--XKKivitoXbc2rVtprpWc2bO8Ta0EwL-Y70YOs30Z4yyBMsOAptFFDZTPCpKXGvQn82y6VdBCjA-sG9MfyCv88rerszDA0UD3OE0AwwFwgkve-bb5g1pDFQ_Uw9wfMiVJfuNOGDkZ2odQxeXMhWJl1V--7x80etNifpEQzvkwA_ZvQ0v9-6DR3QbvBdF5LeAlg.u_X3fudR3Y-P7_4lyS5adFtp6-LfkQ5IFlHoxsmiuIg&dib_tag=se&keywords=wooden%2Brecipe%2Bstand&qid=1784230143&sprefix=wooden%2Brecipi%2Caps%2C159&sr=8-3-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=ll2&tag=rosmeryguerra-20&linkId=c4eafea7a925d5fe6c1295e98df00efa&language=en_US&ref_=as_li_ss_tl"
+           class="btn"
+           target="_blank">
+            View on Amazon
+        </a>
+
+    </div>
+
+</div>
+<!-- Stone Pedestal Fruit Bowl -->
+<div class="card">
+
+    <img src="stone-fruit-bowl-card.png"
+         alt="Stone Pedestal Fruit Bowl">
+
+    <div class="card-content">
+
+        <p class="favorite-label">
+        🌿 ROSE'S FAVORITE
+        </p>
+
+        <h3>Stone Pedestal Fruit Bowl</h3>
+
+        <p>
+        A timeless stone fruit bowl that beautifully displays fresh fruit while adding warmth, texture, and an elegant centerpiece to your kitchen island or dining table.
+        </p>
+
+        <p class="rose-tip">
+        🤍 <strong>Why I Love It:</strong> Fresh fruit somehow feels more inviting when it's displayed beautifully. This bowl turns everyday produce into part of the kitchen décor and makes the whole space feel lived in and welcoming.
+        </p>
+
+        <a href="https://www.amazon.com/Nawgnail-Natural-Travertine-Decorative-Pedestal/dp/B0CNX3TL1Z?crid=1GUJ49DU53PEB&dib=eyJ2IjoiMSJ9.5hk1LuBOfiBqMOuMehJWnOes0la0sG7Z6vkCKP0dFSYlj2gPfcockwD047bnHpp_jG2uFIV-4iCLotNSTu8ox-6JhYv77H8-9nePUHl9hfjn6nP24hGWGpVfMShvzRDReCsEPYzzTygb83bp5zkRM9FHz3f5AH9T845cRp4bylmIHQ19otes-3Ytzg_GP5tbvNwpiOi5lVrkyavhsCeWBYVuZcZjLk5qI_7i5WJop79joaOURg4VOn5mGCJFFt17hKh20DWNwEM_0tBMW56MXmLwUhlHuICccNoxfYhv9B0.qoJAee5RbSNunKsIFDyyuPtzjWHms2i_w5MLG02yISk&dib_tag=se&keywords=decorative%2Bfruit%2Bbowl&qid=1784230915&sprefix=decorative%2Bfruit%2Bbow%2Caps%2C209&sr=8-44&th=1&linkCode=ll2&tag=rosmeryguerra-20&linkId=605a9523e2743ef22d48ad0b79088800&language=en_US&ref_=as_li_ss_tl"
+           class="btn"
+           target="_blank">
+           View on Amazon
+        </a>
+
+    </div>
+
+</div>
+        
+</div>
+        
+        <hr class="section-divider">
+        
+        <h3 class="collection-title">🍞 Baking Favorites</h3>
+        
+<p class="collection-intro">
+Favorite baking tools and kitchen essentials for creating homemade treats, family traditions, and sweet memories together.
+</p>
+
+<p class="coming-soon">
+🌿 I'm gathering my favorite baking essentials for this collection. I hope they'll inspire many happy moments in your kitchen.
+</p>
+
+<hr class="section-divider">
+
+<h3 class="collection-title">🥗 Healthy Cooking</h3>
+
+<p class="collection-intro">
+Simple tools and everyday favorites that make preparing fresh, healthy meals easier and more enjoyable.
+</p>
+
+<p class="coming-soon">
+🌿 Healthy cooking is one of my passions, and I'm carefully building this collection with products I truly believe make a difference.
+</p>
+
+<hr class="section-divider">
+
+<h3 class="collection-title">📖 Recipes Using These Favorites</h3>
+
+<p class="collection-intro">
+Simple family recipes made with the products you'll find throughout this kitchen collection—because the best memories are often made around the table.
+</p>
+
+<p class="coming-soon">
+🌿 Delicious recipes are coming soon! I can't wait to share family favorites, helpful kitchen tips, and meals made with love.
+</p>
+
+<!-- End Future Kitchen Collections -->
+        
+<img src="website-home-organization-banner.png"
+     alt="Home Organization"
+     class="category-banner">
+
+<h2 id="home" class="category-title">
+🏠 Home Organization
+</h2>
+    
+    <div class="products">
+
+        <div class="card" id="pantry-storage-containers">
+
+    <img src="pantry-storage-containers.png"
+         alt="24-Piece Pantry Storage Containers">
+
+    <div class="card-content">
+
+        <h3>24-Piece Pantry Storage Containers</h3>
+
+        <p>
+        I love how these airtight containers keep pantry staples fresh while making shelves look clean and organized. They're perfect for storing pasta, cereal, flour, sugar, snacks, and baking ingredients.
+        </p>
+
+        <a href="https://www.amazon.com/Airtight-Containers-Vtopmart-Organization-Canisters/dp/B08ZK5WDWN?crid=1Z4QDDOWIMQYR&dib=eyJ2IjoiMSJ9.l1O_gUengvxaPK38-Opkey8Y1Aa4f2qTwZIfzejqJeW42NCaRup-XAns4qiKXSoTnVTqAWhpVYqEsVABEr3rthOtQDOVPHNJw1bVArn08gwJpia-x7xtVUUGUcL2sGaQu-zGHxI-MlLAxP6XcuMNLoirHSUg_XvUlPOyyNDNgELoLvciwmLh0ztpoENfRjbcGpUTeBLMWUujlM2F51Ugn33AQnUpaL316BCG6wqEsE292bHIvFg_AzKx2Dw10GwzTdB6Q-N0_X5X3Kqh55H8uD2ML27mt-NcGTCTc9-klIU.thigKA0QcV-jO0EYQeg4c54PSYkuG728nYEpVYApbmg&dib_tag=se&keywords=pantry%2Borganization&qid=1782594287&sprefix=pantry%2Borganization%2Caps%2C162&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=ll2&tag=rosmeryguerra-20&linkId=3731199eba5bc7a4348aa22775afd201&language=en_US&ref_=as_li_ss_tl"
+           class="btn"
+           target="_blank">
+            View on Amazon
+        </a>
+
+    </div>
+
+</div>
+        <div class="card" id="clear-pantry-organizer-bins">
+
+    <img src="clear-pantry-organizer-bins.png"
+         alt="Clear Pantry Organizer Bins">
+
+    <div class="card-content">
+
+        <h3>Clear Pantry Organizer Bins (8-Pack)</h3>
+
+        <p>
+        I love using these clear organizer bins to keep snacks, juice boxes, yogurt, seasoning packets, and pantry essentials neatly separated. They make it easy to find everything while keeping the pantry and refrigerator looking clean and organized.
+        </p>
+
+        <a href="https://www.amazon.com/Vtopmart-Storage-Organizer-Organization-Compartment/dp/B0B9BDQTV9?dib=eyJ2IjoiMSJ9.l1O_gUengvxaPK38-Opkey8Y1Aa4f2qTwZIfzejqJeW42NCaRup-XAns4qiKXSoTnVTqAWhpVYqEsVABEr3rtlM4vn0M8UdpSWN5cVVilov9ggSjXfHSETlNgk4IvgSQbpG1Mv9q0tFbzrgk2Crb0MT6k0q2Kcmn7xhhp5_vdkNqwg6ZvobSGcXrY2IdfyYVpOJtw2leXoAQwh1UNB8u4aEn-z-k3z4abH7jyusNW6pOVzEi4ZPeKYL4WZ-3n9aflncoXqulr79nATeJXCVAG1YCLlaXsOvo7E0y4tmIkZw.uxKs4_eT3JMZLK6i_l3jR5x8uENq-rxMRaPtbiN7EPI&dib_tag=se&keywords=pantry%2Borganizers%2Band%2Bstorage&qid=1782594772&sr=8-20-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1&linkCode=ll2&tag=rosmeryguerra-20&linkId=baafe53d06b57f479e546c54b20352c3&language=en_US&ref_=as_li_ss_tl"
+           class="btn"
+           target="_blank">
+            View on Amazon
+        </a>
+
+    </div>
+
+</div>
+        <div class="card" id="can-organizer-rack">
+
+    <img src="can-organizer-rack.png"
+         alt="3-Tier Can Organizer Rack">
+
+    <div class="card-content">
+
+        <h3>3-Tier Can Organizer Rack</h3>
+
+        <p>
+        Keep canned foods neatly organized and easy to reach with this sturdy 3-tier organizer. It's perfect for maximizing pantry space while making meal prep faster and keeping shelves clutter-free.
+        </p>
+        
+        <a href="https://www.amazon.com/SimpleHouseware-Stackable-Rack-Organizer-Chrome/dp/B01IIXR2II?crid=25EINJYC6CE7N&dib=eyJ2IjoiMSJ9.5W4vNanzJ_qhpKFRHfEp5u1MNVYDb_35C_dRiG4MsQjkvSYrLB9q3CRpkZoimRUWQ9ItDH5EsqfOGg4TD2MOgDrejg7ddwXWiJyHqtt8GkDXAt4RaNYClPU3X2AtFANW6kAxqE3WcaKVPStstMQbgnmJ-LGf9khm967IsJY4mirEY4TobYndidNXEeDEOQWGlJ2UQG_VSkPJ5vzkF3r5COjFdbr2O-waSnHZom5xVbYN2vAFz-lUe4TyCROVKkd_e3Xphe8KT_-bNhUQEtFz2Au512nB3g2OqEvdY3sCoKo.9hz8T30Cuu3dt3j0G1jCosx8CDe6maCj9Wcy8hznMUc&dib_tag=se&keywords=pantry%2Borganizers%2Band%2Bstorage%2Bcans&qid=1782596520&sprefix=pantry%2Borganizers%2Band%2Bstorage%2Bcans%2Caps%2C166&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=ll2&tag=rosmeryguerra-20&linkId=c6b5a6d0f534df4eab84a5409297e4f6&language=en_US&ref_=as_li_ss_tl"
+           class="btn"
+           target="_blank">
+            View on Amazon
+        </a>
+
+    </div>
+
+</div>
+        <div class="card" id="portable-label-maker">
+
+    <img src="portable-label-maker.png"
+         alt="Portable Bluetooth Label Maker">
+
+    <div class="card-content">
+
+        <h3>Portable Bluetooth Label Maker</h3>
+
+        <p>
+        Create custom labels for pantry containers, storage bins, office supplies, school items, and more with this compact Bluetooth label maker. It's an easy way to keep every space in your home neat and organized.
+        </p>
+
+        <p class="rose-tip">
+        💚 <strong>Rose's Tip:</strong> I use labels on pantry containers, storage baskets, kids' school supplies, and office bins. It makes everything easy to find and helps the whole family know where things belong.
+        </p>
+
+        <a href="https://www.amazon.com/Nelko-P21-Bluetooth-Templates-Organizing/dp/B0CHJR142G?crid=3BC9XJUUB9V8P&dib=eyJ2IjoiMSJ9.4eO0IXL9IM6P_TyIqERg7W30zn0x-K96hMO8UE6Jm27uS_kpTxy8dVVE3BdVODeoaOt8OJ1pqFD3sJnx4m0rz3H0vnHxa_yxj1florcGd2vDPoUaiVqd4D1NXv4Cqs042gjodORgO6cY92Pq_-v3jWUZZQ3Gr0JOQcT43sWQ-V_ilOWIpifo58xJ6A8bAjRSpF4DCI5viNWdaYliOkTSlKfuDSJagQkP9Lek5YICHoo.9LKciQSjlCISnUQFEQHyRa8-MRfOClI-schstR8i2zU&dib_tag=se&keywords=label%2Bmaker%2Bbest%2Bsellers%2Bwith%2Btape&qid=1782598813&sprefix=label%2Bmaker%2Bbest%2Bs%2Caps%2C156&sr=8-6-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1&linkCode=ll2&tag=rosmeryguerra-20&linkId=4ba8961d15745b2d7014b7552d88c76d&language=en_US&ref_=as_li_ss_tl"
+           class="btn"
+           target="_blank">
+            View on Amazon
+        </a>
+
+    </div>
+
+</div>
+       <div class="card" id="glass-pantry-jars">
+
+    <img src="glass-pantry-jars.png"
+         alt="Glass Pantry Storage Jars">
+
+    <div class="card-content">
+
+        <h3>Glass Pantry Storage Jars</h3>
+
+        <p>
+        These beautiful glass jars are perfect for storing flour, rice, pasta, oats, coffee, sugar, and other everyday pantry staples. They keep ingredients fresh while creating a clean, organized pantry you'll enjoy opening every day.
+        </p>
+
+        <p class="rose-tip">
+        💚 <strong>Rose's Tip:</strong> I love using matching glass jars because they instantly reduce visual clutter and make it easy to see when it's time to refill an ingredient.
+        </p>
+
+        <a href="https://www.amazon.com/Yirilan-Storage-Containers-4000ml-Airtight/dp/B0FHKMXBPX?content-id=amzn1.sym.f1e24090-399e-445e-b618-1765f1ce436c%3Aamzn1.sym.f1e24090-399e-445e-b618-1765f1ce436c&crid=1LPRM4JQ2MLI8&cv_ct_cx=flour%2Band%2Bsugar%2Bcontainers%2C%2Bglass%2Bbest%2Bsellers&keywords=flour%2Band%2Bsugar%2Bcontainers%2C%2Bglass%2Bbest%2Bsellers&pd_rd_i=B0FHKMXBPX&pd_rd_r=758a36d0-fdd9-401d-a034-67cc94078a4e&pd_rd_w=2QpVk&pd_rd_wg=W8m3H&pf_rd_p=f1e24090-399e-445e-b618-1765f1ce436c&pf_rd_r=X8Z0H677DZ4P0YJ5277N&qid=1782776718&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=flour%2Band%2Bsugar%2Bcontainers%2C%2Bglass%2Bbest%2Bsellers%2Cspecialty-aps%2C133&sr=1-1-72da3c38-bbeb-4ec6-a5c8-94f3516831b3-spons&srs=121082092011&aref=fWCrfPnku9&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1&linkCode=ll2&tag=rosmeryguerra-20&linkId=00c1984dcd714220af3c9d244ee1839e&language=en_US&ref_=as_li_ss_tl"
+           class="btn"
+           target="_blank">
+
+            View on Amazon
+
+        </a>
+
+    </div>
+
+</div>
+<div class="card" id="glass-food-dispenser">
+
+    <img src="glass-food-dispenser.png"
+         alt="Multipurpose Glass Food Dispenser">
+
+    <div class="card-content">
+
+        <h3>Multipurpose Glass Food Dispenser</h3>
+
+        <p>
+        Perfect for rice, cereal, oats, beans, pet food, coffee, and other pantry staples. The built-in measuring cup makes serving easy while helping keep ingredients fresh and neatly stored.
+        </p>
+
+        <p class="rose-tip">
+        💚 <strong>Rose's Tip:</strong> Choose one ingredient your family uses every day and store it here. You'll reach for it constantly while keeping your pantry neat and organized.
+        </p>
+
+        <a href="https://www.amazon.com/Container-Dispenser-Creative-Organization-Airtight/dp/B086QXGCN5?crid=1K5XRK5U5TQYT&dib=eyJ2IjoiMSJ9.t1HBPWjV134qFS0NOfHql_V6xm8B6LrA7ZtNSDiMSPX5jVyHpuZTBF1PWp8b3WxZ-pyWzK3LI9nyBShuaJccP8Jw4Wc8C-C2W24G-73zs03iEOYXP2LLEnqsOJl9_VCSzbpw93tdndQExxlgQidtQTDbqX8utzQoMHrR9vH0SuDL-SfhO--by9FRU4L9svByRWwYoDrlZGSUyUDGpi1IfjdW7aK_VqXgUHZJD0frb8c.EK6fNaLO7YcL_OOjbtKVdtJ7i1M_WFad_gOd0MCdMR4&dib_tag=se&keywords=rice%2Band%2Bcereal%2Bdispenser&qid=1782778880&sprefix=rice%2Band%2Bcereal%2Bdispense%2Cspecialty-aps%2C147&sr=8-14&th=1&linkCode=ll2&tag=rosmeryguerra-20&linkId=0291bfda966efb93812100a5aea6eccd&language=en_US&ref_=as_li_ss_tl"
+           class="btn"
+           target="_blank">
+
+            View on Amazon
+
+        </a>
+
+    </div>
+
+</div>
+
+<div class="card" id="lazy-susan-turntable">
+
+    <img src="lazy-susan-turntable.png"
+         alt="Lazy Susan Turntable">
+
+    <div class="card-content">
+
+        <h3>Clear Lazy Susan Turntable</h3>
+
+        <p>
+        Keep oils, spices, sauces, baking supplies, coffee essentials, and everyday pantry items organized and easy to reach with one simple spin.
+        </p>
+
+        <p class="rose-tip">
+        💚 <strong>Rose's Tip:</strong> I use mine for cooking oils and seasonings so nothing gets pushed to the back of the shelf. It's also perfect for bathrooms and under-sink cabinets.
+        </p>
+
+        <a href="https://www.amazon.com/Turntable-Organizer-Organization-Container-Countertop/dp/B09CKRQMKZ?crid=1U7CB72V3D80E&dib=eyJ2IjoiMSJ9.WE12MQHNR8O2Kxz9nMQjM8B5SGWb4XLUkJ5h-ut6ErsdTGM8bz7YQ5QNJ2aG_8bqJpYp6Jazb1hjetiWPMgOVJW767o7Eg28OP2BBTKkg_dQ6eEHzvjc22ssdhONHvh_MSQVZnOk3y5T_IOAEBibaxmk3eb3hDlZbfsacceksR2fWSYk76pfW776Q1hDUNbHeSInnYz3gnT5qePGWZ2STQ-zvvx8JUSFywaZ2E6mjOFiW72NqdYBpg_zTYZ3STrp9PauliD4xBcFLPTaEr6463GRsf3EwmVGyuIa7Thzgw4.UuuQpIqZ56d0FQ1jHYcoURg1ZnQB89J2iAqHiW5YPOE&dib_tag=se&keywords=lazy%2Bsusan%2Bfor%2Bpantry&qid=1782780024&sprefix=lazy%2Bsusan%2Bfor%2Bpantry%2Caps%2C167&sr=8-18&th=1&linkCode=ll2&tag=rosmeryguerra-20&linkId=5e5d38f28cfeaacb92d1f194776ebdd8&language=en_US&ref_=as_li_ss_tl"
+           class="btn"
+           target="_blank">
+
+            View on Amazon
+
+        </a>
+
+    </div>
+
+</div>
+<div style="text-align:center; margin:50px 0 70px;">
+
+<h2 style="color:#355537;">
+
+🌿 Want to Organize Your Pantry?
+
+</h2>
+
+<p style="max-width:700px; margin:20px auto; line-height:1.8;">
+
+Discover my complete step-by-step Pantry Organization Guide filled with practical tips, trusted Amazon finds, and a FREE printable checklist to help you create a peaceful, organized pantry.
+
+</p>
+
+<a href="home-organization-guide.html"
+class="btn">
+
+Explore the Complete Pantry Organization Guide →
+
+</a>
+
+</div>
+        
+    </div>
+
+<img src="website-school-supplies-banner.png"
+     alt="School Supplies"
+     class="category-banner">
+
+<h2 id="school" class="category-title">
+🎒 School Supplies
+</h2>
+    
+<div class="products">
+
+    <div class="card">
+        <img src="notebook.png" alt="Notebook Set">
+        <div class="card-content">
+            <h3>Composition Notebook</h3>
+            <p>Perfect for note-taking, homework, and classroom assignments.</p>
+            <a href="https://www.amazon.com/Mead-Composition-Notebook-Ruled-Sheets/dp/B00006IDM7?crid=3BU6S6ZWPZZHM&dib=eyJ2IjoiMSJ9.yDSXRVByFSz86JU_iOXJ1R8tLo6yn_hVGaRSzZeVPYJqUH3kq7-ToQuAXmPeft4sd3WaGcJzz1B8176HzE4yW80DyFF9KlQV4Rg01K_j3HKf35gZ6zOIlfbJ-e9NOxDAce_dNMht2bTIkvGbr_D-aLG-0mup_otMuBifmY5E2dodlE_S7xljKsgX3uulwc0NaOl8eQs3oG2TMpRSts8_jwLQnA-LU2-ZjxiJC8UCZtlxZHFEVUn8Srw5u3X51-UmXdH4mIu1-B1LsR2sazMghkJJhrc51P2zZKz3xGhDLXs.gaYwdpBHHvqm6LVkMlvOGAK9VhLWQX5KdSLXyk8r-cM&dib_tag=se&keywords=composition%2Bnotebooks%2Bfor%2Bschool&qid=1782329391&sprefix=composition%2Bnotebooks%2Bfor%2Bschool%2Caps%2C135&sr=8-8&th=1&linkCode=ll2&tag=rosmeryguerra-20&linkId=c554f33b858518eff174225a2d319c5b&language=en_US&ref_=as_li_ss_tl"
+               class="btn"
+               target="_blank">
+                View on Amazon
+            </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="ticonderoga-pencil.png" alt="Ticonderoga Pencils">
+        <div class="card-content">
+            <h3>Ticonderoga Pencils</h3>
+            <p>Trusted pencils for students, teachers, and homeschool families.</p>
+            <a href="https://www.amazon.com/dp/B000QE2H6A?pd_rd_i=B000QE2H6A&pd_rd_w=A1qyL&content-id=amzn1.sym.4f5afe61-a551-4f21-a495-c7c4f2997a96&pf_rd_p=4f5afe61-a551-4f21-a495-c7c4f2997a96&pf_rd_r=2C5KDS8BK70QZV5KHTB7&pd_rd_wg=NsF0C&pd_rd_r=b8b4de92-c2fb-4042-8175-8f9cbc6f109a&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM&th=1&linkCode=ll2&tag=rosmeryguerra-20&linkId=318dcc9101915cd7b8f490a7465f08c4&language=en_US&ref_=as_li_ss_tl"
+               class="btn"
+               target="_blank">
+                View on Amazon
+            </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="crayola-colored-pencil.png" alt="crayola color pencil">
+        <div class="card-content">
+            <h3>crayola color pencil</h3>
+            <p>Trusted pencils for students, teachers, and homeschool families.</p>
+            <a href="https://www.amazon.com/Generic-Colored-Assorted-Pre-Sharpened-Sharpener/dp/B0D74X2S6F?crid=FJCVC8R6C7GF&dib=eyJ2IjoiMSJ9.OkVgsWeozYdtD3RIBbd3mIbBxrv_V3FM3oN8-v5fYIKmgEfZaP0IkK1HRW_sJGDWJLqIdZDHFsg4ALzaTJ6okobhUYyh2TvXalycDvOjIzNV2OqM1pR3V5lKnqRnFg3VFQOrE0feqwHyUNmLuMlud4eqVAt0e2VbEPZb59boQ1F1DG6IWIqjGU5pMqe7yXHsUeIOdUNQFpPmbquQBMvviD2QXAYwN-pNlYhwPlOwR3nKTXSM0--o_vprJ3ov2LdKbh8dN0hzkfiIJlLMPFMvlEKSeEur17bvGNTcIOlTMsQ.W57g4FsUU65wVXviWaJUQ440U0vC1U68Ry7DkzIPlAw&dib_tag=se&keywords=crayola+color+pencil&qid=1782343862&sprefix=crayola+color+pencil%2Caps%2C184&sr=8-8&linkCode=ll2&tag=rosmeryguerra-20&linkId=3f16c3c0cea4c631b92ecc4566af7993&language=en_US&ref_=as_li_ss_tl"
+               class="btn"
+               target="_blank">
+                View on Amazon
+            </a>
+        </div>
+    </div>  
+    
+    <div class="card">
+        <img src="backpack.png" alt="Student Backpack">
+        <div class="card-content">
+            <h3>Student Backpack</h3>
+            <p>Comfortable backpack with plenty of room for books and supplies.</p>
+            <a href="https://www.amazon.com/JanSport-Superbreak-Backpack-Jansport-Black/dp/B0007QCQGI?crid=1OZ31U46FOM5D&dib=eyJ2IjoiMSJ9.sO1cLN2_yKD1u1Jg0sz7UIb1AGGdPd-wrwyVeSeRd9XpUyl6QyOGPUqg1RfFz9gXbbbOYA2w1UoHjj_mi7NRCPP4_s6vlrd5hCIeHc7PcscPr4bADsTFl4sbIMjmuxz8WJmqHEFGi1Nn1utlqjdJTzcvxvjw6Wwz6_hexgR6hYAIHZggxfQSSDFVDYSLw2F4gIjTlFOB1p0P5GSAP9ZraOgosvxnFp9fMWe469cnNh8.dzdzBz4TduYN4n3Z0t8a9-nHwvtjqVT4EuF1Qb_fvxk&dib_tag=se&keywords=backpack%2Bfor%2Bschool&qid=1782330252&sprefix=backpack%2Caps%2C194&sr=8-12&ufe=app_do%3Aamzn1.fos.df0d0cc7-83fa-4a85-b7bd-5d4f1fffe633&th=1&linkCode=ll2&tag=rosmeryguerra-20&linkId=bf7c9eebd9748e8263429a6146d777c7&language=en_US&ref_=as_li_ss_tl"
+               class="btn"
+               target="_blank">
+                View on Amazon
+            </a>
+        </div>
+    </div>
+
+</div>  
+
+<img src="website-healthy-living-banner.png"
+     alt="Healthy Living"
+     class="category-banner">
+
+<h2 id="healthy" class="category-title">
+🌿 Healthy Living
+</h2>
+    
+<p class="category-description">
+Discover products that help support a healthier lifestyle, from nutritious foods and wellness essentials to everyday items that make healthy living easier for the whole family.
+</p>
+
+<div class="products">
+    <!-- Healthy Living products will go here -->
+</div>
+
+<img src="website-family-favorite.png"
+     alt="Family Favorite"
+     class="category-banner">
+
+<h2 id="family" class="category-title">
+👨‍👩‍👧‍👦 Family Favorite
+</h2>
+    
+<p class="category-description">
+A collection of family-friendly products I love, including everyday essentials, seasonal favorites, and practical finds that help make family life a little easier.
+</p>
+
+<div class="products">
+    <!-- Family Favorites products will go here -->
+</div>
+
+<img src="website-faith-and-family-banner.png"
+     alt="Faith & Family"
+     class="category-banner">
+
+<h2 id="faith-family" class="category-title">
+✝️ Faith & Family
+</h2>
+    
+<p class="category-description">
+Faith-inspired books, devotionals, journals, gifts, and resources that encourage families to grow together in Christ and keep Jesus at the center of everyday life.
+</p>
+
+</div>
+    
+<footer>
+
+<div class="footer-content">
+
+<h2>🌿 Healthy Living & Family Finds</h2>
+
+<p class="footer-mission">
+
+Helping women create peaceful homes through practical guides, trusted products, free resources, and simple routines—one small step at a time.
+    
+</p>
+<div class="faith-products">
+
+    <!-- GraceLaced Journaling Bible -->
+    <a href="https://www.amazon.com/GraceLaced-Journaling-Artwork-Simons-Hardcover/dp/B0FTZFCLBK?linkCode=ll2&tag=rosmeryguerra-20"
+       class="faith-card"
+       target="_blank"
+       rel="noopener sponsored">
+
+        <img src="gracelaced-bible-card.png"
+             alt="GraceLaced Journaling Bible">
+
+    </a>
+
+    <!-- God's Promises -->
+    <a href="https://www.amazon.com/Gods-Promises-Your-Every-Need/dp/1404186654?linkCode=ll2&tag=rosmeryguerra-20"
+       class="faith-card"
+       target="_blank"
+       rel="noopener sponsored">
+
+        <img src="gods-promises-card.png"
+             alt="God's Promises for Your Every Need">
+
+    </a>
+
+</div>
+    <div class="footer-links">
+
+<div>
+
+<h3>Explore</h3>
+
+<a href="index.html">Home</a>
+
+<a href="about.html">Meet Rose</a>
+
+<a href="home-organization-guide.html">Pantry Guide</a>
+
+</div>
+
+<div>
+
+<h3>Categories</h3>
+
+<a href="#kitchen">Kitchen Favorites</a>
+
+<a href="#home">Home Organization</a>
+
+<a href="#school">School Supplies</a>
+
+<a href="#healthy">Healthy Living</a>
+
+<a href="#family">Family Favorites</a>
+
+<a href="#faith">Faith & Family</a>
+
+</div>
+
+<div>
+
+<h3>Resources</h3>
+
+<a href="home-organization-guide.html">
+Free Pantry Guide
+</a>
+
+<a href="pantry-checklist.pdf">
+Printable Checklist
+</a>
+
+</div>
+
+</div>
+
+<hr>
+
+<p class="footer-disclosure">
+
+As an Amazon Associate I earn from qualifying purchases. This helps support Healthy Living & Family Finds at no additional cost to you. Thank you for supporting our family and this website. 💚
+
+</p>
+
+<p class="copyright">
+
+© 2026 Healthy Living & Family Finds • All Rights Reserved
+
+</p>
+
+</div>
+
+</footer>
+</body>
+</html>
 
