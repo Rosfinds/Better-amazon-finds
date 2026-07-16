@@ -35,30 +35,54 @@ body{
     border-radius:20px;
     box-shadow:0 8px 25px rgba(0,0,0,.12);
 }
-    .navbar{
-    background:white;
+  /* ---------- Luxury Header ---------- */
+
+.site-header{
+    max-width:1200px;
+    margin:0 auto;
+    padding:25px 30px;
     display:flex;
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
-    flex-wrap:wrap;
-    gap:12px;
-    padding:18px 20px;
-    box-shadow:0 3px 12px rgba(0,0,0,.06);
-    margin-bottom:20px;
 }
 
-.navbar a{
+.logo{
+    display:flex;
+    flex-direction:column;
+}
+
+.logo h1{
+    margin:0;
+    font-size:2rem;
+    color:#2f4f36;
+    line-height:1.05;
+    font-family:Georgia, serif;
+    font-weight:600;
+}
+
+.logo span{
+    font-size:1rem;
+    color:#8b8b8b;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    margin-top:4px;
+}
+
+.nav-menu{
+    display:flex;
+    gap:40px;
+}
+
+.nav-menu a{
     text-decoration:none;
     color:#355537;
-    font-weight:600;
-    padding:10px 16px;
-    border-radius:10px;
+    font-size:1rem;
+    font-weight:500;
     transition:.3s;
 }
 
-.navbar a:hover{
-    background:#355537;
-    color:white;
+.nav-menu a:hover{
+    color:#b68b47;
 }
     
 .disclosure{
