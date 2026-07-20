@@ -1,87 +1,212 @@
-/* Rose Finds Master Stylesheet */
+/* =========================================
+   ROSE FINDS
+   FOUNDATION
+========================================= */
 
-*{margin:0;padding:0;box-sizing:border-box;}
-:root{
---bg:#f7f4ef;--paper:#fff;--text:#3d3d3d;--accent:#7d8f72;
---button:#b98b59;--button-hover:#a87b4d;--border:#e8e2d9;
-}
-body{font-family:Georgia,"Times New Roman",serif;background:var(--bg);color:var(--text);line-height:1.7;}
-.site-header{display:flex;justify-content:space-between;align-items:center;padding:24px 8%;background:#fff;border-bottom:1px solid var(--border);}
-.logo h1{font-size:2rem;letter-spacing:.08em;}
-.logo span{display:block;font-size:.9rem;color:#777;margin-top:4px;}
-.nav-menu{display:flex;gap:30px;}
-.nav-menu a{text-decoration:none;color:var(--text);}
-.nav-menu a:hover{color:var(--accent);}
-.kitchen-hero{position:relative;}
-.hero-banner{width:100%;height:600px;object-fit:cover;display:block;}
-.hero-overlay{position:absolute;right:8%;top:50%;transform:translateY(-50%);max-width:420px;color:#fff;}
-.hero-overlay h1{font-size:4rem;line-height:1;margin-bottom:20px;}
-.hero-overlay p{font-size:1.2rem;}
-.container{width:min(1200px,92%);margin:70px auto;}
-.collection-intro{text-align:center;max-width:760px;margin:0 auto 60px;}
-.collection-intro h2{font-size:2.3rem;margin-bottom:18px;}
-.collection-intro p{color:#666;}
-.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;}
-.card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 10px 25px rgba(0,0,0,.08);display:flex;flex-direction:column;}
-.card img{width:100%;height:280px;object-fit:contain;background:#fff;padding:20px;}
-.card-content{padding:24px;}
-.card h3{margin-bottom:10px;}
-.card p{margin-bottom:18px;color:#666;}
-.btn{display:block;text-align:center;background:var(--button);color:#fff;text-decoration:none;padding:14px;border-radius:10px;}
-.btn:hover{background:var(--button-hover);}
-.disclosure{text-align:center;font-size:.85rem;color:#777;margin:24px 0;}
-@media(max-width:900px){
-.site-header{flex-direction:column;gap:18px;}
-.nav-menu{flex-wrap:wrap;justify-content:center;}
-.hero-banner{height:420px;}
-.hero-overlay{left:8%;right:8%;max-width:none;}
-.hero-overlay h1{font-size:2.8rem;}
-}
-/* ===========================
-   HERO SECTION
-=========================== */
-
-.hero {
-    position: relative;
-    width: 100%;
-    height: 90vh;
-    min-height: 650px;
-    overflow: hidden;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+html{
+    scroll-behavior:smooth;
 }
 
-.hero-content {
-    position: absolute;
-    top: 50%;
-    right: 8%;
-    transform: translateY(-50%);
-    max-width: 430px;
-    color: white;
-    text-align: left;
+body{
+    font-family: Georgia, "Times New Roman", serif;
+    color:#3e3d39;
+    background:#f8f5f1;
+    line-height:1.7;
 }
 
-.hero-subtitle {
-    letter-spacing: .25em;
-    text-transform: uppercase;
-    font-size: .8rem;
-    margin-bottom: 18px;
-    opacity: .9;
+/* =========================================
+   ANNOUNCEMENT BAR
+========================================= */
+
+.announcement-bar{
+    background:#7c876d;
+    color:white;
+    text-align:center;
+    padding:12px;
+    font-size:.8rem;
+    letter-spacing:.15em;
+    text-transform:uppercase;
 }
 
-.hero h1 {
-    font-size: 4.5rem;
-    font-weight: 400;
-    line-height: 1;
-    margin-bottom: 25px;
+/* =========================================
+   HEADER
+========================================= */
+
+.site-header{
+
+    background:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:28px 70px;
+
+    border-bottom:1px solid #ece8e2;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
 }
 
-.hero-description {
-    font-size: 1.2rem;
-    line-height: 1.8;
+.logo a{
+
+    text-decoration:none;
+
+    color:#3b3b3b;
+
+    font-size:2rem;
+
+    letter-spacing:.08em;
+}
+
+.main-nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:50px;
+
+    align-items:center;
+}
+
+.main-nav a{
+
+    text-decoration:none;
+
+    color:#4b4b4b;
+
+    font-size:.92rem;
+
+    letter-spacing:.12em;
+
+    text-transform:uppercase;
+
+    transition:.3s;
+}
+
+.main-nav a:hover{
+
+    color:#7c876d;
+}
+
+/* =========================================
+   DROPDOWN
+========================================= */
+
+.dropdown{
+
+    position:relative;
+}
+
+.dropdown-menu{
+
+    display:none;
+
+    position:absolute;
+
+    left:0;
+
+    top:45px;
+
+    background:white;
+
+    min-width:230px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.10);
+
+    padding:18px 0;
+
+    border-radius:8px;
+}
+
+.dropdown-menu li{
+
+    list-style:none;
+}
+
+.dropdown-menu a{
+
+    display:block;
+
+    padding:12px 24px;
+
+    text-transform:none;
+
+    letter-spacing:0;
+
+    font-size:.95rem;
+}
+
+.dropdown:hover .dropdown-menu{
+
+    display:block;
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero{
+
+    position:relative;
+
+    height:88vh;
+
+    min-height:720px;
+
+    overflow:hidden;
+}
+
+.hero img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+}
+
+.hero-content{
+
+    position:absolute;
+
+    right:8%;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    max-width:460px;
+
+    color:white;
+}
+
+.hero-content h1{
+
+    font-size:5rem;
+
+    line-height:.95;
+
+    font-weight:400;
+
+    margin-bottom:30px;
+}
+
+.hero-content p{
+
+    font-size:1.3rem;
+
+    line-height:1.8;
 }
