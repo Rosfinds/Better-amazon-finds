@@ -1,52 +1,93 @@
 /* ==========================================
    ROSE FINDS
    COZY KITCHEN V2
+   Designed exclusively for Cozy Kitchen
 ========================================== */
+
 
 /* ==========================================
-   WELCOME
+   1. RESET
 ========================================== */
 
-.welcome{
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-    padding:90px 0;
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#f8f5f1;
+    color:#3d3a36;
+
+    font-family:"Inter",sans-serif;
+
+    line-height:1.7;
 
 }
 
-.welcome__container{
+img{
 
-    width:min(1200px,92%);
-    margin:0 auto;
+    display:block;
+    width:100%;
 
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:70px;
+}
+
+a{
+
+    text-decoration:none;
+    color:inherit;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+/* ==========================================
+   2. ANNOUNCEMENT BAR
+========================================== */
+
+.announcement-bar{
+
+    background:#7c866b;
+
+    color:white;
+
+    text-align:center;
+
+    padding:12px 20px;
+
+    letter-spacing:.18em;
+
+    font-size:.78rem;
+
+    text-transform:uppercase;
+
+}
+
+/* ==========================================
+   3. HEADER
+========================================== */
+
+.site-header{
+
+    background:#ffffff;
+
+    display:flex;
+
+    justify-content:space-between;
 
     align-items:center;
 
-}
+    padding:26px 70px;
 
-.welcome__content h2{
-
-    font-size:3rem;
-    line-height:1.2;
-    color:#7a4c24;
-    margin-bottom:30px;
+    border-bottom:1px solid #ebe6df;
 
 }
-
-.welcome__content p{
-
-    font-size:1.2rem;
-    color:#444;
-    max-width:560px;
-
-}
-
-.welcome__image img{
-
-    width:100%;
-    border-radius:20px;
-
-}
-
