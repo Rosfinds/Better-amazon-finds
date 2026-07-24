@@ -334,7 +334,6 @@ ul{
 /*==================================================
   PRODUCTS GRID
 ==================================================*/
-
 .products-grid{
 
     max-width:1280px;
@@ -345,11 +344,14 @@ ul{
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(220px,260px));
 
-    gap:28px;
+    justify-content:center;
+
+    gap:30px;
 
 }
+
 /*==================================================
   PRODUCT CARD
 ==================================================*/
@@ -390,7 +392,7 @@ ul{
 
     background:#ffffff;
 
-    padding:30px;
+    padding:22px;
 
 }
 .rf-card-content{
@@ -408,7 +410,7 @@ ul{
 
     font-family:"Cormorant Garamond", serif;
 
-    font-size:2rem;
+    font-size:1.55rem;
 
     font-weight:600;
 
