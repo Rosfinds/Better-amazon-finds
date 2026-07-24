@@ -175,3 +175,77 @@ ul{
     height:100%;
 
 }
+
+/* ==========================================
+   6. WELCOME
+========================================== */
+
+.welcome{
+
+    padding:70px 0;
+
+    background:#f8f5f1;
+
+}
+
+.welcome__container{
+
+    max-width:1200px;
+
+    margin:0 auto;
+
+    padding:0 40px;
+
+    display:grid;
+
+    grid-template-columns:1.1fr .9fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+.welcome__content h2{
+
+    font-family:"Cormorant Garamond", serif;
+
+    font-size:3.5rem;
+
+    color:#7a4c24;
+
+    line-height:1.1;
+
+    margin-bottom:28px;
+
+}
+
+.welcome__content p{
+
+    font-size:1.25rem;
+
+    max-width:540px;
+
+    color:#4b4b4b;
+
+}
+
+.welcome__image{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+}
+
+.welcome__image img{
+
+    width:100%;
+
+    max-width:500px;
+
+    border-radius:18px;
+
+    display:block;
+
+}
